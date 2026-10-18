@@ -1,0 +1,10 @@
+path: /content/drive/MyDrive/Helminth_Project_Backup/helminth_4class_recovered
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: ASC.
+  1: HKW.
+  2: SCH.
+  3: TRI.
