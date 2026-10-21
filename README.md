@@ -2,83 +2,132 @@
 <div align="center">
 
 # HELMINTH EGG DETECTION
+
 ### YOLO11n · Microscopy Image Analysis
 
-**A Preliminary Four-Class Object Detection Experiment**
+<p>
+  <strong>A Preliminary Four-Class Object Detection Experiment</strong>
+</p>
 
-[![YOLO11n](https://img.shields.io/badge/Model-YOLO11n-00D4FF?style=for-the-badge)](https://docs.ultralytics.com/)
-[![Dataset](https://img.shields.io/badge/Dataset-Zenodo-00B4D8?style=for-the-badge)](https://doi.org/10.5281/zenodo.13843815)
-[![Research](https://img.shields.io/badge/Research-Preliminary-64748B?style=for-the-badge)](#limitations)
-[![Python](https://img.shields.io/badge/Python-3.13.16-14213D?style=for-the-badge)](https://www.python.org/)
+<img src="https://img.shields.io/badge/YOLO11n-Object%20Detection-00D9FF?style=for-the-badge&logo=target&logoColor=white" />
+<img src="https://img.shields.io/badge/Research-Preliminary-172B4D?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Python-3.13-00B8D9?style=for-the-badge&logo=python&logoColor=white" />
 
-*Exploring deep learning for microscopy-based helminth egg detection.*
+<br/>
+
+**Made by Rayyan Anwar**
+
+*Deep learning · Microscopy · Scientific reproducibility*
 
 </div>
 
 ---
 
-## 01 · Project Overview
+<div align="center">
 
-This project investigates YOLO11n for detecting four classes of helminth eggs in microscopy images. The experiment uses a selected sample of 400 image–annotation pairs from a publicly available dataset.
+### RESEARCH AT A GLANCE
 
-The objectives are to:
+</div>
 
-- Develop a preliminary object-detection baseline.
-- Evaluate localization and classification performance.
-- Document the mathematical foundations and inference workflow.
-- Preserve the distinction between training, validation, and held-out testing.
-- Report limitations transparently and support future reproducible research.
+<table>
+<tr>
+<td width="50%" align="center">
 
-> **Research scope:** This is a preliminary computer-vision experiment, not a clinically validated diagnostic system.
+<strong>400</strong>
 
-## 02 · Animated Research Workflow
+<br/>Selected image–annotation pairs
+
+</td>
+<td width="50%" align="center">
+
+<strong>4</strong>
+
+<br/>Detection classes
+
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+
+<strong>YOLO11n</strong>
+
+<br/>Lightweight detection model
+
+</td>
+<td width="50%" align="center">
+
+<strong>320 × 320</strong>
+
+<br/>Configured input size
+
+</td>
+</tr>
+</table>
+
+> **Research note:** This project is a preliminary object-detection experiment. It is not a clinically validated diagnostic system.
+
+---
+
+## 01 — Animated Research Workflow
 
 <div align="center">
 
 ![Animated research workflow](assets/workflow.gif)
 
-*Illustrative workflow: dataset preparation → training → validation → held-out testing.*
+*Dataset → Training → Validation → Held-out testing*
 
 </div>
 
-## 03 · Microscopy-Inspired Visualization
+## 02 — Microscopy-Inspired Visualization
 
 <div align="center">
 
 ![Illustrative microscopic motion](assets/microscopic_motion.gif)
 
-*This synthetic animation is inspired by microscopy imagery. It is not actual experimental microscopy footage.*
+*An illustrative synthetic visualization inspired by microscopy imagery; not experimental microscopy footage.*
 
 </div>
 
-## 04 · Illustrative Prediction Demo
+## 03 — Illustrative Prediction Demo
 
 <div align="center">
 
 ![Illustrative YOLO detection demo](assets/prediction_demo.gif)
 
-*This is an illustrative detection-style animation. Its bounding boxes and labels are not verified predictions from the trained checkpoint.*
+*Illustrative detection-style animation, not a verified prediction from the trained checkpoint.*
 
 </div>
 
 ---
 
-## 05 · Dataset
+## 04 — Project Overview
 
-| Property | Details |
-|---|---|
-| Dataset | Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset |
-| Source | [Zenodo record](https://zenodo.org/records/13843815) |
-| DOI | [10.5281/zenodo.13843815](https://doi.org/10.5281/zenodo.13843815) |
-| Selected sample | 400 image–annotation pairs |
-| Training split | 280 images |
-| Validation split | 60 images |
-| Held-out test split | 60 images |
-| Recorded split seed | 42 |
+This project explores YOLO11n for detecting four helminth egg classes in microscopy images using a selected sample of 400 image–annotation pairs.
+
+The goal is to establish a transparent baseline, document the evaluation process, and identify areas requiring further investigation.
+
+### Dataset source
+
+- **Dataset:** Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset
+- **Repository:** [Helminth Egg Detection — YOLO11](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11)
+- **Dataset record:** [Zenodo](https://zenodo.org/records/13843815)
+- **DOI:** [10.5281/zenodo.13843815](https://doi.org/10.5281/zenodo.13843815)
+
+### Dataset split
+
+<table>
+<tr><th>Split</th><th>Images</th><th>Purpose</th></tr>
+<tr><td>Training</td><td>280</td><td>Model fitting</td></tr>
+<tr><td>Validation</td><td>60</td><td>Development and model selection</td></tr>
+<tr><td>Held-out test</td><td>60</td><td>Final evaluation</td></tr>
+<tr><th>Total</th><th>400</th><th>Selected sample</th></tr>
+</table>
+
+Recorded split seed: `42`.
 
 ### Detection classes
 
-| Class ID | Label | Organism |
+| ID | Label | Organism |
 |---:|---|---|
 | 0 | ASC. | *Ascaris lumbricoides* |
 | 1 | HKW. | Hookworm |
@@ -87,121 +136,107 @@ The objectives are to:
 
 ---
 
-## 06 · Model Architecture and Training
+## 05 — Model & Training Configuration
 
-The experiment uses YOLO11n, a lightweight YOLO11 object-detection model initialized with pretrained weights.
+<table>
+<tr><th>Parameter</th><th>Recorded value</th></tr>
+<tr><td>Architecture</td><td>YOLO11n</td></tr>
+<tr><td>Initial weights</td><td><code>yolo11n.pt</code></td></tr>
+<tr><td>Image size</td><td>320 × 320</td></tr>
+<tr><td>Configured epochs</td><td>15</td></tr>
+<tr><td>Batch size</td><td>4</td></tr>
+<tr><td>Training device</td><td>CPU</td></tr>
+<tr><td>Optimizer setting</td><td>Ultralytics auto</td></tr>
+<tr><td>Ultralytics</td><td>8.4.181</td></tr>
+<tr><td>Python</td><td>3.13.16</td></tr>
+<tr><td>PyTorch</td><td>2.11.0+cpu</td></tr>
+<tr><td>Random seed</td><td>42</td></tr>
+<tr><td>Deterministic mode</td><td>Enabled in recorded configuration</td></tr>
+</table>
 
-| Parameter | Recorded configuration |
-|---|---|
-| Architecture | YOLO11n |
-| Initial weights | `yolo11n.pt` |
-| Input image size | 320 × 320 |
-| Configured epochs | 15 |
-| Batch size | 4 |
-| Training device | CPU |
-| Optimizer setting | Ultralytics `auto` |
-| Ultralytics | 8.4.181 |
-| Python | 3.13.16 |
-| PyTorch | 2.11.0+cpu |
-| Random seed | 42 |
-| Deterministic mode | Enabled in recorded configuration |
-
-These are the recorded training configuration values. The effective optimizer and learning-rate settings should be confirmed against the original training logs before claiming exact training reproducibility.
-
-## 07 · Mathematical Foundations
-
-The following equations describe standard concepts used in object detection and evaluation. They are explanatory formulas, not a claim that the original implementation manually computes each quantity.
-
-### 7.1 Bounding box representation
-
-A bounding box can be represented as:
-
-$$
-B = (x_c, y_c, w, h)
-$$
-
-where:
-
-- \(x_c, y_c\): center coordinates.
-- \(w, h\): width and height.
-
-The exact coordinate convention depends on the annotation and model interface. Predictions can also be represented using corner coordinates \((x_1,y_1,x_2,y_2)\).
-
-### 7.2 Intersection over Union (IoU)
-
-IoU measures the overlap between a predicted bounding box and a ground-truth box.
-
-$$
-IoU = \frac{|B_p \cap B_{gt}|}{|B_p \cup B_{gt}|}
-$$
-
-Here, \(B_p\) is the predicted box and \(B_{gt}\) is the annotated box.
-
-An IoU closer to 1 indicates greater overlap. IoU thresholds are used in object-detection evaluation to determine whether a prediction sufficiently matches an annotation.
-
-### 7.3 Precision
-
-Precision measures the proportion of counted detections that are correct under the evaluation matching rules.
-
-$$
-Precision = \frac{TP}{TP+FP}
-$$
-
-### 7.4 Recall
-
-Recall measures the proportion of annotated objects that are successfully detected.
-
-$$
-Recall = \frac{TP}{TP+FN}
-$$
-
-where:
-
-- \(TP\): true-positive detections.
-- \(FP\): false-positive detections.
-- \(FN\): false-negative detections.
-
-These are object-detection metrics and should not be interpreted as patient-level clinical diagnostic sensitivity or specificity.
-
-### 7.5 Average Precision (AP)
-
-Average Precision summarizes the precision–recall curve for a class.
-
-$$
-AP = \int_0^1 P(R)\,dR
-$$
-
-Here, \(P(R)\) denotes precision as a function of recall. Practical implementations estimate AP from the evaluated precision–recall curve.
-
-### 7.6 Mean Average Precision (mAP)
-
-For \(C\) evaluated classes:
-
-$$
-mAP = \frac{1}{C}\sum_{c=1}^{C} AP_c
-$$
-
-- **mAP@50:** AP evaluated at IoU threshold 0.50.
-- **mAP@50–95:** AP averaged across IoU thresholds from 0.50 to 0.95 in increments of 0.05.
-
-The exact evaluation settings must be held consistent when comparing results.
+The effective optimizer and learning-rate settings should be checked against the original training logs before claiming exact reproduction.
 
 ---
 
-## 08 · Held-Out Test Results
+## 06 — Mathematical Foundations
 
-The recorded evaluation covers **60 test images containing 147 annotated instances**.
+These equations describe standard object-detection concepts. They are explanatory formulas, not a claim that the original training code manually implemented them.
 
-### Aggregate metrics
+### 6.1 Bounding box
+
+A bounding box may be represented as:
+
+\[
+B = (x_c, y_c, w, h)
+\]
+
+where \(x_c,y_c\) represent the center coordinates, and \(w,h\) represent width and height.
+
+### 6.2 Intersection over Union (IoU)
+
+IoU measures overlap between a predicted bounding box and its ground-truth annotation.
+
+\[
+IoU = \frac{|B_p \cap B_{gt}|}{|B_p \cup B_{gt}|}
+\]
+
+A larger IoU indicates greater overlap.
+
+### 6.3 Precision
+
+\[
+Precision = \frac{TP}{TP+FP}
+\]
+
+### 6.4 Recall
+
+\[
+Recall = \frac{TP}{TP+FN}
+\]
+
+Where:
+
+- \(TP\): true-positive detections
+- \(FP\): false-positive detections
+- \(FN\): false-negative detections
+
+### 6.5 Average Precision
+
+\[
+AP = \int_0^1 P(R)\,dR
+\]
+
+Average Precision summarizes the precision–recall curve for an individual class.
+
+### 6.6 Mean Average Precision
+
+\[
+mAP = \frac{1}{C}\sum_{c=1}^{C}AP_c
+\]
+
+- **mAP@50:** evaluated at IoU 0.50.
+- **mAP@50–95:** averaged across IoU thresholds from 0.50 to 0.95 in increments of 0.05.
+
+These metrics measure object-detection performance, not clinical diagnostic sensitivity or specificity.
+
+---
+
+## 07 — Held-Out Test Results
+
+Recorded evaluation: **60 test images and 147 annotated instances.**
+
+<div align="center">
 
 | Metric | Recorded result |
 |---|---:|
-| Precision | 74.77% |
-| Recall | 64.40% |
-| mAP@50 | 72.50% |
-| mAP@50–95 | 55.26% |
+| Precision | **74.77%** |
+| Recall | **64.40%** |
+| mAP@50 | **72.50%** |
+| mAP@50–95 | **55.26%** |
 
-### Per-class AP@50
+</div>
+
+### Class-wise AP@50
 
 | Class | AP@50 |
 |---|---:|
@@ -212,25 +247,25 @@ The recorded evaluation covers **60 test images containing 147 annotated instanc
 
 ### Interpretation
 
-The recorded results vary across the four classes. Hookworm and *Schistosoma mansoni* have lower AP@50 than the other two classes, indicating areas that warrant further investigation.
+Performance differs across classes. Hookworm and *Schistosoma mansoni* show lower recorded AP@50 than the other classes and require further investigation.
 
-These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations.
+**Evaluation caveat:** Separate evaluation records have reported slightly different aggregate metrics. The checkpoint, software version, thresholds, image size, and saved outputs must be reconciled before claiming exact metric reproducibility.
 
-> **Evaluation transparency:** Separate evaluation records have reported slightly different aggregate metrics. These records must be reconciled against the checkpoint, evaluation parameters, software version, and saved outputs before claiming exact metric reproducibility.
+The results apply only to this selected test split and do not establish generalization to independent specimens or clinical populations.
 
 ---
 
-## 09 · Python Inference Example
+## 08 — Python Inference Example
 
-The following example illustrates how to load the trained checkpoint and run object detection on a microscopy image.
+The following example illustrates how to load the trained checkpoint and run inference on an image.
 
 ```python
 from ultralytics import YOLO
 
-# Load trained model weights
+# Load trained weights
 model = YOLO("models/best.pt")
 
-# Run inference on an image
+# Run detection on a microscopy image
 results = model.predict(
     source="sample_microscopy.jpg",
     imgsz=320,
@@ -238,7 +273,7 @@ results = model.predict(
     save=True
 )
 
-# Display detected classes, confidence scores and boxes
+# Display predicted classes, confidence, and coordinates
 for result in results:
     for box in result.boxes:
         class_id = int(box.cls.item())
@@ -252,14 +287,9 @@ for result in results:
         )
 ```
 
-**Important:**
+The image path must point to a real image. The confidence threshold `0.25` is an example inference setting and is not claimed to be the threshold used for the reported test metrics.
 
-- Replace `sample_microscopy.jpg` with the path to an available image.
-- The checkpoint path must point to the actual model file.
-- `conf=0.25` is an illustrative inference threshold, not a claim about the threshold used to generate the reported test metrics.
-- This example demonstrates inference; it does not establish that a prediction is biologically correct.
-
-### Class ID mapping
+### Class mapping
 
 ```python
 CLASS_NAMES = {
@@ -270,13 +300,11 @@ CLASS_NAMES = {
 }
 ```
 
-The mapping must remain consistent with the dataset annotations and `dataset.yaml`.
+The class IDs must match the annotations and dataset configuration.
 
 ---
 
-## 10 · Dataset YAML Example
-
-A typical YOLO dataset configuration identifies the image splits and class names.
+## 09 — Dataset YAML Example
 
 ```yaml
 path: /path/to/your/dataset
@@ -292,13 +320,11 @@ names:
   3: TRI.
 ```
 
-This is a template, not a verified copy of the original configuration. Update the root directory and split paths to match the actual dataset structure. Keep class IDs consistent with the annotations.
+This is a template. Update the root path and split locations for the actual dataset layout.
 
 ---
 
-## 11 · Evaluation Code Example
-
-The following example demonstrates a test-split evaluation using Ultralytics.
+## 10 — Evaluation Example
 
 ```python
 from ultralytics import YOLO
@@ -319,21 +345,21 @@ print(f"mAP@50: {metrics.box.map50:.4f}")
 print(f"mAP@50–95: {metrics.box.map:.4f}")
 ```
 
-This is an illustrative evaluation example. Confirm that the installed Ultralytics version supports the requested split and parameters, and record the exact settings for any final evaluation.
+This is an illustrative evaluation example. Confirm support for the specified split and parameters in the installed Ultralytics version before using it.
 
-**Evaluation protocol:**
+**Evaluation protocol**
 
-1. Use training data to fit the model.
-2. Use validation data for model selection and development decisions.
-3. Keep the held-out test set separate from model and threshold tuning.
-4. Record the checkpoint hash, software version, image size, confidence threshold, IoU threshold, and output files for each evaluation.
-5. Do not overwrite previously recorded metrics when a new run produces different values; investigate and document the difference.
+1. Train on the training split.
+2. Use validation data for development and model selection.
+3. Keep the test split out of threshold tuning and model selection.
+4. Record the checkpoint hash, software version, image size, thresholds, and evaluation outputs.
+5. Investigate differences between evaluation runs instead of silently replacing earlier metrics.
 
 ---
 
-## 12 · Repository Structure
+## 11 — Repository Structure
 
-The intended project structure is:
+Intended structure; confirm every path exists in GitHub.
 
 ```text
 helminth-egg-detection-yolo11/
@@ -354,56 +380,53 @@ helminth-egg-detection-yolo11/
 └── README.md
 ```
 
-Confirm that every listed file and directory exists in the repository before treating this structure as a verified inventory.
-
 ---
 
-## 13 · Reproducibility Notes
+## 12 — Reproducibility
 
-- The recorded training configuration specifies random seed 42 and deterministic mode.
-- Exact reproduction may depend on software versions, hardware, dataset files, and library behavior.
-- The original training configuration contains a data path that may differ from the path used in another environment.
-- Update `dataset.yaml` before running prediction or evaluation on a different machine.
-- Preserve the original checkpoint and its SHA-256 hash when conducting additional experiments.
-- Store evaluation parameters and output metrics with each run.
+- The recorded configuration specifies seed `42` and deterministic mode.
+- Exact reproduction can depend on hardware, software, data files, and library behavior.
+- Update `dataset.yaml` for the local environment before evaluation or prediction.
+- Preserve the original checkpoint and record its SHA-256 hash.
+- Save the exact evaluation settings alongside the metrics.
 - Keep validation-based model selection separate from held-out test evaluation.
 
-A fixed random seed supports reproducibility but does not, by itself, guarantee identical results across environments.
+A fixed seed supports reproducibility but does not guarantee identical results across environments.
 
 ---
 
-## 14 · Limitations
+## 13 — Limitations
 
-1. **Preliminary sample:** The experiment uses a selected sample of 400 image–annotation pairs.
-2. **Source independence:** Duplicate checks found no exact duplicate groups or cross-split perceptual-hash matches at the tested threshold. This does not prove independence at the slide or specimen level.
-3. **Class-wise performance:** The recorded results vary substantially between classes.
-4. **Evaluation consistency:** Separate test evaluation records need reconciliation before exact repeatability can be claimed.
-5. **Baseline comparisons:** Further comparisons with appropriate baseline models and repeated experiments are needed.
-6. **External validation:** Independent data from other sources are required to assess generalization.
-7. **Clinical applicability:** The model has not been established as a clinically validated diagnostic system.
+1. The experiment uses a selected sample of 400 image–annotation pairs.
+2. Duplicate checks do not establish microscopy-slide or specimen-level independence.
+3. Performance varies between classes.
+4. Evaluation records require reconciliation before exact repeatability can be claimed.
+5. Further baseline comparisons and repeated experiments are needed.
+6. Independent external validation is required to assess generalization.
+7. The model has not been established as a clinically validated diagnostic system.
 
 ---
 
-## 15 · Dataset and Research Citation
+## 14 — Research Citation
 
-**Dataset**
+**Dataset:** [Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset — Zenodo](https://doi.org/10.5281/zenodo.13843815)
 
-[Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset — Zenodo](https://doi.org/10.5281/zenodo.13843815)
+**Related publication:** Oyibo et al. (2025), *Scientific Reports*.
 
-**Related publication**
+[Publication DOI](https://doi.org/10.1038/s41598-025-02755-9)
 
-Oyibo et al. (2025), *Scientific Reports*.
-
-[https://doi.org/10.1038/s41598-025-02755-9](https://doi.org/10.1038/s41598-025-02755-9)
-
-Consult the original publication and dataset record for the complete author list, publication details, and citation requirements.
+Consult the original publication and dataset record for the complete author list and citation requirements.
 
 ---
 
 <div align="center">
 
-### COMPUTER VISION · MICROSCOPY · RESEARCH REPRODUCIBILITY
+### BUILT WITH SCIENTIFIC RIGOR
 
-*A preliminary research project focused on transparent evaluation, reproducibility, and responsible scientific reporting.*
+**Made by Rayyan Anwar**
+
+*Computer Vision · Microscopy · Reproducible Research*
+
+[GitHub Repository](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11) · [Dataset DOI](https://doi.org/10.5281/zenodo.13843815)
 
 </div>
