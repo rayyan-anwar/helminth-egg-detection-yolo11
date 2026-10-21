@@ -1,25 +1,3 @@
-## Animated Research Workflow
-
-
-![Animated research workflow](assets/workflow.gif)
-
-
-## Microscopy-Inspired Visualization
-
-
-![Illustrative microscopic motion](assets/microscopic_motion.gif)
-
-
-## Illustrative Prediction Demo
-
-
-![Illustrative YOLO detection demo](assets/prediction_demo.gif)
-
-
-*These are illustrative animations, not experimental microscopy footage or verified model predictions.*
-
-https://doi.org/10.5281/zenodo.13843815
-
 # Helminth Egg Detection Using YOLO11n
 
 ## Project overview
@@ -90,6 +68,28 @@ Oyibo et al. (2025), Scientific Reports:
 https://doi.org/10.1038/s41598-025-02755-9
 
 Dataset DOI:
+## Animated Research Workflow
+
+
+![Animated research workflow](assets/workflow.gif)
+
+
+## Microscopy-Inspired Visualization
+
+
+![Illustrative microscopic motion](assets/microscopic_motion.gif)
+
+
+## Illustrative Prediction Demo
+
+
+![Illustrative YOLO detection demo](assets/prediction_demo.gif)
+
+
+*These are illustrative animations, not experimental microscopy footage or verified model predictions.*
+
+https://doi.org/10.5281/zenodo.13843815
+
 
 
 
