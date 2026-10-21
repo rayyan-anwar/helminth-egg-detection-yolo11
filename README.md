@@ -1,14 +1,20 @@
 ## Animated Research Workflow
 
+
 ![Animated research workflow](assets/workflow.gif)
+
 
 ## Microscopy-Inspired Visualization
 
+
 ![Illustrative microscopic motion](assets/microscopic_motion.gif)
+
 
 ## Illustrative Prediction Demo
 
+
 ![Illustrative YOLO detection demo](assets/prediction_demo.gif)
+
 
 *These are illustrative animations, not experimental microscopy footage or verified model predictions.*
 
@@ -18,6 +24,8 @@ https://doi.org/10.5281/zenodo.13843815
 
 ## Project overview
 A preliminary object-detection experiment for four helminth egg classes in microscopy images using YOLO11n.
+
+
 
 ## Dataset
 - Name: Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset
