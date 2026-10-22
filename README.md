@@ -409,18 +409,14 @@ Consult the original publication and dataset record for the complete author list
 ### BUILT WITH SCIENTIFIC RIGOR 
 **Made by Rayyan Anwar** 
 
-*Computer Vision 
-· Microscopy 
-· Reproducible Research* 
+*Computer Vision · Microscopy · Reproducible Research* 
 
 [GitHub Repository](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11) · 
 [Dataset DOI](https://doi.org/10.5281/zenodo.13843815)
 
 <div align="center">
 
-### COMPUTER VISION 
-· MICROSCOPY 
-· RESEARCH REPRODUCIBILITY
+### COMPUTER VISION · MICROSCOPY · RESEARCH REPRODUCIBILITY
 
 *A preliminary research project focused on transparent evaluation, reproducibility, and responsible scientific reporting.*
 
