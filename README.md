@@ -406,14 +406,17 @@ Oyibo et al. (2025),
 *Scientific Reports*. [Publication DOI](https://doi.org/10.1038/s41598-025-02755-9)
 Consult the original publication and dataset record for the complete author list and citation requirements.
 --- <div align="center"> 
-### BUILT WITH SCIENTIFIC RIGOR **Made by Rayyan Anwar** 
+### BUILT WITH SCIENTIFIC RIGOR 
+**Made by Rayyan Anwar** 
 *Computer Vision · Microscopy · Reproducible Research* 
 [GitHub Repository](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11) · 
 [Dataset DOI](https://doi.org/10.5281/zenodo.13843815)
 
 <div align="center">
 
-### COMPUTER VISION · MICROSCOPY · RESEARCH REPRODUCIBILITY
+### COMPUTER VISION 
+· MICROSCOPY 
+· RESEARCH REPRODUCIBILITY
 
 *A preliminary research project focused on transparent evaluation, reproducibility, and responsible scientific reporting.*
 
