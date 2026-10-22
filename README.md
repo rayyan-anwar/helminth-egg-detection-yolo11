@@ -408,7 +408,11 @@ Consult the original publication and dataset record for the complete author list
 --- <div align="center"> 
 ### BUILT WITH SCIENTIFIC RIGOR 
 **Made by Rayyan Anwar** 
-*Computer Vision · Microscopy · Reproducible Research* 
+
+*Computer Vision 
+· Microscopy 
+· Reproducible Research* 
+
 [GitHub Repository](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11) · 
 [Dataset DOI](https://doi.org/10.5281/zenodo.13843815)
 
