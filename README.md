@@ -216,7 +216,7 @@ The recorded results vary across the four classes. Hookworm and *Schistosoma man
 
 These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations.
 
-> **Evaluation transparency:** Separate evaluation records have reported slightly different aggregate metrics. These records must be reconciled against the checkpoint, evaluation parameters, software version, and saved outputs before claiming exact metric reproducibility.
+> **Evaluation transparency:** The standardized test evaluation reproduced the saved aggregate metrics using YOLO11n, image size 320, confidence threshold 0.001, NMS IoU threshold 0.7, and Ultralytics 8.4.181. An earlier run with a different NMS IoU setting produced different metrics; evaluation settings should therefore be reported alongside results.
 
 ---
 
@@ -377,7 +377,7 @@ A fixed random seed supports reproducibility but does not, by itself, guarantee 
 1. **Preliminary sample:** The experiment uses a selected sample of 400 image–annotation pairs.
 2. **Source independence:** Duplicate checks found no exact duplicate groups or cross-split perceptual-hash matches at the tested threshold. This does not prove independence at the slide or specimen level.
 3. **Class-wise performance:** The recorded results vary substantially between classes.
-4. **Evaluation consistency:** Separate test evaluation records need reconciliation before exact repeatability can be claimed.
+4. **Evaluation consistency:** Metrics can vary with evaluation settings; the reported standardized configuration should be preserved for reproducibility.
 5. **Baseline comparisons:** Further comparisons with appropriate baseline models and repeated experiments are needed.
 6. **External validation:** Independent data from other sources are required to assess generalization.
 7. **Clinical applicability:** The model has not been established as a clinically validated diagnostic system.
