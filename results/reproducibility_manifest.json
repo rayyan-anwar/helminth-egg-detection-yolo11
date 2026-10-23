@@ -1,0 +1,91 @@
+{
+  "audit_timestamp_utc": "2026-10-21T09:39:27.125028+00:00",
+  "project": "YOLO11n helminth egg detection",
+  "software": {
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "ultralytics": "8.4.181",
+    "pytorch": "2.11.0+cu130",
+    "cuda_available": true,
+    "cuda_version": "13.0",
+    "gpu": "Tesla T4"
+  },
+  "baseline_checkpoint": {
+    "path": "/content/drive/MyDrive/Helminth_GitHub_Project/models/best.pt",
+    "exists": true,
+    "sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+    "expected_sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+    "hash_matches_expected": true,
+    "task": "detect",
+    "class_names": {
+      "0": "ASC.",
+      "1": "HKW.",
+      "2": "SCH.",
+      "3": "TRI."
+    },
+    "saved_training_metadata": {
+      "model": "yolo11n.pt",
+      "epochs": 15,
+      "imgsz": 320,
+      "batch": 4,
+      "device": "cpu",
+      "seed": 42,
+      "optimizer": "AdamW",
+      "lr0": 0.00125,
+      "lrf": 0.01,
+      "workers": 0,
+      "pretrained": true,
+      "deterministic": true,
+      "original_data_path": "/content/helminth_4class_recovered/dataset.yaml"
+    }
+  },
+  "dataset_config": {
+    "path": "/content/drive/MyDrive/Helminth_Project_Backup/helminth_4class_recovered",
+    "yaml_path": "/content/drive/MyDrive/Helminth_GitHub_Project/dataset.yaml",
+    "yaml_sha256": "84b3f619b4aef5496ef2d51568ca3b05ec1942057d9d38a53a6d9e260ca26e2c",
+    "splits": {
+      "train": "images/train",
+      "val": "images/val",
+      "test": "images/test"
+    },
+    "class_names": {
+      "0": "ASC.",
+      "1": "HKW.",
+      "2": "SCH.",
+      "3": "TRI."
+    },
+    "file_counts": {
+      "train": {
+        "images": 280,
+        "label_files": 280,
+        "image_dir_exists": true,
+        "label_dir_exists": true,
+        "image_label_counts_match": true
+      },
+      "val": {
+        "images": 60,
+        "label_files": 60,
+        "image_dir_exists": true,
+        "label_dir_exists": true,
+        "image_label_counts_match": true
+      },
+      "test": {
+        "images": 60,
+        "label_files": 60,
+        "image_dir_exists": true,
+        "label_dir_exists": true,
+        "image_label_counts_match": true
+      }
+    }
+  },
+  "integrity_checks": {
+    "all_split_image_label_counts_match": true,
+    "training_performed_during_this_audit": false,
+    "test_set_used_for_threshold_tuning": false
+  },
+  "limitations": [
+    "Checkpoint metadata references an older dataset YAML path.",
+    "Saved metadata alone does not establish the complete original training provenance.",
+    "Matching image and label file counts does not verify every annotation or specimen-level independence."
+  ]
+}
