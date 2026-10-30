@@ -216,8 +216,7 @@ The recorded results vary across the four classes. Hookworm and *Schistosoma man
 
 These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations.
 
-> **Evaluation transparency:** The standardized test evaluation reproduced the saved aggregate metrics using YOLO11n, image size 320, confidence threshold 0.001, NMS IoU threshold 0.7, and Ultralytics 8.4.181. An earlier run with a different NMS IoU setting produced different metrics; evaluation settings should therefore be reported alongside results.
-
+> **Evaluation transparency:** The reported test metrics correspond to a standardized YOLO11n evaluation on 60 test images containing 147 annotated instances, using image size 320, confidence threshold 0.001, NMS IoU threshold 0.7, and Ultralytics 8.4.181. An earlier evaluation record reports different aggregate metrics. These differences have not been fully reconciled, so the reported values should be interpreted with this limitation in mind. No training was performed and no test-set threshold tuning was conducted during the standardized evaluation.
 ---
 
 ## 09 · Python Inference Example
