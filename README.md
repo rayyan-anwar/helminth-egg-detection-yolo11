@@ -398,6 +398,12 @@ The notebook's full execution history has not been independently inspected in th
 
 ---
 
+### Reproducibility and local setup
+
+For a practical handoff checklist, see [REPRODUCIBILITY_CHECKLIST.md](REPRODUCIBILITY_CHECKLIST.md). A portable dataset configuration template is available at [dataset.example.yaml](dataset.example.yaml). Copy the template to a separate local file and update its dataset root; do not overwrite the tracked `dataset.yaml`, whose hash is part of the recorded provenance.
+
+The checklist distinguishes the documented 5 November evaluation from the original training environment and lists the remaining checks required before claiming exact end-to-end reproduction.
+
 ## 13 · Reproducibility Notes
 
 - The recorded training configuration specifies random seed 42 and deterministic mode.
