@@ -424,7 +424,7 @@ Consult the original publication and dataset record for the complete author list
 ### BUILT WITH SCIENTIFIC RIGOR 
 **Project Lead: Rayyan Anwar**
 
-**Research Collaborators: Miss Riza Tasleem · Miss Sidra Naaz** 
+**Research Collaborators: · Miss Riza Tasleem · Miss Sidra Naaz** 
 
 *Computer Vision · Microscopy · Reproducible Research* 
 
