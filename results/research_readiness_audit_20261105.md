@@ -80,3 +80,22 @@ The training arguments record 15 epochs, image size 320, batch size 4, CPU as th
 For the current project report, use the 5 November aggregate metrics as the verified documented held-out test evaluation, with its exact settings and the limitations above. Keep the 23 October evaluation as a separate historical record. Do not merge their metrics. Keep the fixed-threshold custom error analysis separate from official Ultralytics mAP results.
 
 This is a research-readiness audit, not a claim of clinical validation or journal acceptance.
+
+## 7. Follow-up record — 5 November 2026: class-wise AP
+
+A subsequent extraction from the already completed 5 November evaluation object `r_cm` produced the class-wise AP values below. This was a metric extraction from the existing evaluation result; it did not retrain the model or launch another evaluation.
+
+| Class | AP@50 | AP@50–95 |
+|---|---:|---:|
+| ASC. | 95.39% | 76.73% |
+| HKW. | 55.06% | 46.38% |
+| SCH. | 62.68% | 40.02% |
+| TRI. | 80.78% | 60.21% |
+
+The values are preserved in:
+- `results/classwise_test_results_20261105.csv`
+- `results/classwise_test_results_20261105.json`
+
+The arithmetic mean of the four class AP values is consistent with the 5 November aggregate mAP@50 (73.48%) and mAP@50–95 (55.84%), subject to rounding. This consistency check is not an independent rerun.
+
+The earlier statement in Section 3 that no 5 November class-wise AP table was present describes the state of the repository at the time of the original audit. This follow-up record supersedes that availability observation; it does not alter the historical 23 October results or the original audit scope.
