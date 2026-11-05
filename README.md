@@ -190,35 +190,37 @@ The exact evaluation settings must be held consistent when comparing results.
 
 ## 08 · Held-Out Test Results
 
-The recorded evaluation covers **60 test images containing 147 annotated instances**.
+The held-out test split contains **60 images and 147 annotated instances**. Two evaluation records are retained because they used different NMS IoU settings; their results must not be merged or presented as if they came from an identical protocol.
 
-### Aggregate metrics
+### Latest documented evaluation candidate — 5 November 2026
 
-| Metric | Recorded result |
+| Metric | Result |
+|---|---:|
+| Precision | **77.56%** |
+| Recall | **63.89%** |
+| mAP@50 | **73.48%** |
+| mAP@50–95 | **55.84%** |
+
+Recorded settings: YOLO11n checkpoint; image size 320; confidence threshold 0.001; NMS IoU threshold 0.45; Ultralytics 8.4.181; 60 test images / 147 instances. No training was performed and no test-set threshold tuning was conducted during this evaluation. The metrics and provenance hashes are recorded in [`results/final_documented_test_metrics.json`](results/final_documented_test_metrics.json).
+
+### Earlier standardized evaluation — 23 October 2026
+
+This separately retained evaluation used NMS IoU 0.7 (with image size 320 and confidence threshold 0.001).
+
+| Metric | Result |
 |---|---:|
 | Precision | 74.77% |
 | Recall | 64.40% |
 | mAP@50 | 72.50% |
 | mAP@50–95 | 55.26% |
 
-### Per-class AP@50
+Its per-class AP@50 values are: *Ascaris lumbricoides* 95.32%, Hookworm 54.93%, *Schistosoma mansoni* 58.90%, and *Trichuris trichiura* 80.85%. These class-wise values belong to the earlier evaluation record and are **not** class-wise results for the 5 November evaluation.
 
-| Class | AP@50 |
-|---|---:|
-| *Ascaris lumbricoides* | 95.32% |
-| Hookworm | 54.93% |
-| *Schistosoma mansoni* | 58.90% |
-| *Trichuris trichiura* | 80.85% |
+The two records differ. The NMS IoU settings are not the same, so the values should not be treated as a like-for-like comparison. The available records do not establish that this setting difference alone explains the metric changes. Both records are preserved rather than silently overwriting one with the other.
 
-### Interpretation
+These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations. Biological specimen/slide independence across splits has not been established.
 
-The recorded results vary across the four classes. Hookworm and *Schistosoma mansoni* have lower AP@50 than the other two classes, indicating areas that warrant further investigation.
-
-These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations.
-
-> **Evaluation transparency:** The reported test metrics correspond to a standardized YOLO11n evaluation on 60 test images containing 147 annotated instances, using image size 320, confidence threshold 0.001, NMS IoU threshold 0.7, and Ultralytics 8.4.181. An earlier evaluation record reports different aggregate metrics. These differences have not been fully reconciled, so the reported values should be interpreted with this limitation in mind. No training was performed and no test-set threshold tuning was conducted during the standardized evaluation.
 ---
-
 ## 09 · Python Inference Example
 
 The following example illustrates how to load the trained checkpoint and run object detection on a microscopy image.
@@ -376,7 +378,7 @@ A fixed random seed supports reproducibility but does not, by itself, guarantee 
 1. **Preliminary sample:** The experiment uses a selected sample of 400 image–annotation pairs.
 2. **Source independence:** Duplicate checks found no exact duplicate groups or cross-split perceptual-hash matches at the tested threshold. This does not prove independence at the slide or specimen level.
 3. **Class-wise performance:** The recorded results vary substantially between classes.
-4. **Evaluation consistency:** Metrics can vary with evaluation settings; the reported standardized configuration should be preserved for reproducibility.
+4. **Evaluation consistency:** Two retained test-evaluation records use different NMS IoU settings and report different aggregate metrics. Their difference is disclosed; it has not been attributed solely to one setting.
 5. **Baseline comparisons:** Further comparisons with appropriate baseline models and repeated experiments are needed.
 6. **External validation:** Independent data from other sources are required to assess generalization.
 7. **Clinical applicability:** The model has not been established as a clinically validated diagnostic system.
@@ -397,13 +399,6 @@ Oyibo et al. (2025), *Scientific Reports*.
 
 Consult the original publication and dataset record for the complete author list, publication details, and citation requirements.
 
----
-## 14 — Research Citation 
-**Dataset:** [Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset — Zenodo](https://doi.org/10.5281/zenodo.13843815) 
-**Related publication:** 
-Oyibo et al. (2025), 
-*Scientific Reports*. [Publication DOI](https://doi.org/10.1038/s41598-025-02755-9)
-Consult the original publication and dataset record for the complete author list and citation requirements.
 --- <div align="center"> 
 ### BUILT WITH SCIENTIFIC RIGOR 
 **Made by Rayyan Anwar** 
