@@ -1,0 +1,40 @@
+{
+  "diagnostic_date": "2026-11-05",
+  "model": "YOLO11n",
+  "checkpoint": "models/best.pt",
+  "checkpoint_sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+  "ultralytics_version": "8.4.181",
+  "split": "validation",
+  "image": "val_0000_image_09515.png",
+  "image_dimensions_pixels": {
+    "width": 2028,
+    "height": 1520
+  },
+  "inference_settings": {
+    "imgsz": 320,
+    "confidence_threshold": 0.001,
+    "nms_iou_threshold": 0.45
+  },
+  "ground_truth": {
+    "object_count": 1,
+    "class_id": 1,
+    "class_name": "HKW."
+  },
+  "predictions": {
+    "candidate_count": 26,
+    "detections_at_confidence_0_25": 0,
+    "best_matching_candidate": {
+      "class_id": 1,
+      "class_name": "HKW.",
+      "confidence": 0.02787,
+      "iou_with_ground_truth": 0.81799
+    }
+  },
+  "interpretation": "For this single validation image, a low-confidence candidate of the correct class had strong bounding-box overlap with the ground-truth annotation.",
+  "limitations": [
+    "Single-image diagnostic only.",
+    "Not an aggregate validation metric or held-out test result.",
+    "Does not establish confidence calibration, class-wise performance, or clinical diagnostic performance.",
+    "The 26 low-threshold candidates must not be interpreted as 26 confirmed eggs."
+  ]
+}
