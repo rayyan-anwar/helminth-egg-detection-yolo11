@@ -1,0 +1,20 @@
+{
+  "evaluation": "Latest documented YOLO11n held-out test evaluation candidate",
+  "evaluation_date": "2026-11-05",
+  "status": "provisional_documented_result",
+  "test_images": 60,
+  "test_instances": 147,
+  "precision": 0.7756080599550216,
+  "recall": 0.638882739390387,
+  "mAP50": 0.7347717854559864,
+  "mAP50_95": 0.5583584402881157,
+  "imgsz": 320,
+  "confidence_threshold": 0.001,
+  "nms_iou_threshold": 0.45,
+  "ultralytics_version": "8.4.181",
+  "training_performed": false,
+  "test_set_threshold_tuning": false,
+  "checkpoint_sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+  "dataset_yaml_sha256": "84b3f619b4aef5496ef2d51568ca3b05ec1942057d9d38a53a6d9e260ca26e2c",
+  "note": "A separately retained standardized evaluation dated 2026-10-23 used NMS IoU 0.7 and reported different metrics. The available records do not establish that the NMS IoU difference alone explains the discrepancy. Do not combine per-class AP values from that earlier record with these aggregate metrics."
+}
