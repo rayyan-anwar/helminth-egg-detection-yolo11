@@ -1,0 +1,16 @@
+# Portable dataset configuration template.
+# Place the dataset in this repository (or update "path" to its location).
+# Expected layout:
+#   dataset/
+#     images/train, images/val, images/test
+#     labels/train, labels/val, labels/test
+path: ./dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: ASC.
+  1: HKW.
+  2: SCH.
+  3: TRI.
