@@ -31,6 +31,18 @@ The objectives are to:
 
 > **Research scope:** This is a preliminary computer-vision experiment, not a clinically validated diagnostic system.
 
+## Research Team
+
+**Project Lead:** Rayyan Anwar
+
+**Research Collaborators:**
+- **Miss Riza Tasleem** — M.Sc. Zoology, Semester 2
+- **Miss Sidra Naaz** — M.Sc. Zoology, Semester 2
+
+The collaborators contributed to the biological review of helminth morphology and species identification, microscopy-image and annotation review, and biological interpretation of model outputs. These project contributions are distinct from the original dataset authorship.
+
+For the project-level contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
 ## 02 · Animated Research Workflow
 
 <div align="center">
@@ -401,7 +413,9 @@ Consult the original publication and dataset record for the complete author list
 
 --- <div align="center"> 
 ### BUILT WITH SCIENTIFIC RIGOR 
-**Made by Rayyan Anwar** 
+**Project Lead: Rayyan Anwar**
+
+**Research Collaborators: Miss Riza Tasleem · Miss Sidra Naaz** 
 
 *Computer Vision · Microscopy · Reproducible Research* 
 
