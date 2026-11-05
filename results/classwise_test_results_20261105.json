@@ -1,0 +1,34 @@
+[
+    {
+        "class_id": 0,
+        "class_name": "ASC.",
+        "AP50": 0.953917,
+        "AP50_percent": 95.39,
+        "AP50_95": 0.767347,
+        "AP50_95_percent": 76.73
+    },
+    {
+        "class_id": 1,
+        "class_name": "HKW.",
+        "AP50": 0.550594,
+        "AP50_percent": 55.06,
+        "AP50_95": 0.463825,
+        "AP50_95_percent": 46.38
+    },
+    {
+        "class_id": 2,
+        "class_name": "SCH.",
+        "AP50": 0.62676,
+        "AP50_percent": 62.68,
+        "AP50_95": 0.400162,
+        "AP50_95_percent": 40.02
+    },
+    {
+        "class_id": 3,
+        "class_name": "TRI.",
+        "AP50": 0.807816,
+        "AP50_percent": 80.78,
+        "AP50_95": 0.6021,
+        "AP50_95_percent": 60.21
+    }
+]
