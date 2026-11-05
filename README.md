@@ -294,6 +294,14 @@ CLASS_NAMES = {
 
 The mapping must remain consistent with the dataset annotations and `dataset.yaml`.
 
+
+### Recorded single-image validation inference diagnostic — 5 November 2026
+
+A targeted diagnostic on one labelled validation image found one ground-truth Hookworm object. At confidence threshold 0.001, the checkpoint generated 26 candidates; the best-overlap candidate was also classified as Hookworm, with confidence 0.02787 and IoU 0.81799 against the annotation. No candidate passed confidence 0.25. This is a **single-image diagnostic**, not an aggregate performance result or evidence of calibrated confidence. It does not change the held-out test metrics.
+
+- [Detailed diagnostic report](results/single_image_inference_diagnostic_20261105.md)
+- [Structured diagnostic record](results/single_image_inference_diagnostic_20261105.json)
+
 ---
 
 ## 10 · Dataset YAML Example
