@@ -112,13 +112,11 @@ The experiment uses YOLO11n, a lightweight YOLO11 object-detection model initial
 | Batch size | 4 |
 | Training device | CPU |
 | Optimizer setting | Ultralytics `auto` |
-| Ultralytics | 8.4.181 |
-| Python | 3.13.16 |
-| PyTorch | 2.11.0+cpu |
+| Ultralytics | 8.4.181 (recorded project version) |
 | Random seed | 42 |
 | Deterministic mode | Enabled in recorded configuration |
 
-These are the recorded training configuration values. The effective optimizer and learning-rate settings should be confirmed against the original training logs before claiming exact training reproducibility.
+These are the recorded training configuration values. The original training runtime details are not fully reconciled with the saved training configuration, so the Python/PyTorch/GPU details from the later 5 November evaluation must not be presented as the training environment. The effective optimizer and learning-rate settings should be confirmed against the original training logs before claiming exact training reproducibility.
 
 ## 07 · Mathematical Foundations
 
@@ -213,7 +211,18 @@ The held-out test split contains **60 images and 147 annotated instances**. Two 
 | mAP@50 | **73.48%** |
 | mAP@50–95 | **55.84%** |
 
-Recorded settings: YOLO11n checkpoint; image size 320; confidence threshold 0.001; NMS IoU threshold 0.45; Ultralytics 8.4.181; 60 test images / 147 instances. No training was performed and no test-set threshold tuning was conducted during this evaluation. The metrics and provenance hashes are recorded in [`results/final_documented_test_metrics.json`](results/final_documented_test_metrics.json).
+Recorded settings: YOLO11n checkpoint; image size 320; confidence threshold 0.001; NMS IoU threshold 0.45; Ultralytics 8.4.181; Python 3.13.16; PyTorch 2.11.0+cu130; Tesla T4; 60 test images / 147 instances. These runtime details describe the 5 November evaluation, not the original training environment. No training was performed and no test-set threshold tuning was conducted during this evaluation. The metrics and provenance hashes are recorded in [`results/final_documented_test_metrics.json`](results/final_documented_test_metrics.json).
+
+**5 November class-wise results**
+
+| Helminth category | AP@50 | AP@50–95 |
+|---|---:|---:|
+| *Ascaris lumbricoides* (ASC.) | **95.39%** | **76.73%** |
+| Hookworm (HKW.) | 55.06% | 46.38% |
+| *Schistosoma mansoni* (SCH.) | 62.68% | 40.02% |
+| *Trichuris trichiura* (TRI.) | 80.78% | 60.21% |
+
+The class-wise values are stored separately in [`results/classwise_test_results_20261105.csv`](results/classwise_test_results_20261105.csv) and [`results/classwise_test_results_20261105.json`](results/classwise_test_results_20261105.json). Their unrounded class averages are numerically consistent with the overall mAP@50 and mAP@50–95 values above. The class-wise results and aggregate metrics are from the same 5 November evaluation record.
 
 ### Earlier standardized evaluation — 23 October 2026
 
