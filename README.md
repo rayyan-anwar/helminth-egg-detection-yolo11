@@ -355,28 +355,46 @@ This is an illustrative evaluation example. Confirm that the installed Ultralyti
 
 ## 12 · Repository Structure
 
-The intended project structure is:
+The following is a verified high-level inventory of repository paths checked on 5 November 2026 (not an exhaustive listing of every file):
 
 ```text
 helminth-egg-detection-yolo11/
 ├── assets/
+│   ├── ascaris-microscopy.jpg
 │   ├── workflow.gif
 │   ├── microscopic_motion.gif
 │   └── prediction_demo.gif
+├── figures/
+│   ├── BoxF1_curve.png
+│   ├── BoxPR_curve.png
+│   ├── BoxP_curve.png
+│   ├── BoxR_curve.png
+│   ├── confusion_matrix.png
+│   └── confusion_matrix_normalized.png
+├── manuscript/
+│   └── contributor_statement.md
 ├── models/
 │   └── best.pt
+├── notebooks/
+│   └── New Project.ipynb
 ├── results/
-│   ├── test_metrics.json
-│   ├── classwise_test_results.csv
+│   ├── classwise_test_results_20261105.csv
+│   ├── classwise_test_results_20261105.json
+│   ├── classwise_test_metrics_note_20261105.md
+│   ├── final_documented_test_metrics.json
+│   ├── reproducibility_manifest.json
+│   ├── research_readiness_audit_20261105.md
 │   ├── training_history.csv
 │   └── training_args.yaml
-├── figures/
+├── CONTRIBUTORS.md
 ├── dataset.yaml
+├── index.html
 ├── predict.py
+├── requirements.txt
 └── README.md
 ```
 
-Confirm that every listed file and directory exists in the repository before treating this structure as a verified inventory.
+The notebook's full execution history has not been independently inspected in this audit. This inventory confirms repository paths, not that every experiment can be reproduced without the original dataset and runtime setup.
 
 ---
 
