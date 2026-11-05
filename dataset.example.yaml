@@ -1,0 +1,12 @@
+# Portable template only. Do not overwrite the tracked dataset.yaml.
+# Copy this file to dataset.local.yaml and set path to your local dataset root.
+path: /absolute/path/to/helminth_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: ASC.
+  1: HKW.
+  2: SCH.
+  3: TRI.
