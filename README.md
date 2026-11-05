@@ -9,7 +9,7 @@
 [![YOLO11n](https://img.shields.io/badge/Model-YOLO11n-00D4FF?style=for-the-badge)](https://docs.ultralytics.com/)
 [![Dataset](https://img.shields.io/badge/Dataset-Zenodo-00B4D8?style=for-the-badge)](https://doi.org/10.5281/zenodo.13843815)
 [![Research](https://img.shields.io/badge/Research-Preliminary-64748B?style=for-the-badge)](#limitations)
-[![Python](https://img.shields.io/badge/Python-3.13.16-14213D?style=for-the-badge)](https://www.python.org/)
+[![Evaluation Runtime](https://img.shields.io/badge/Evaluation_Runtime-Python_3.13.16-14213D?style=for-the-badge)](#held-out-test-results)
 
 *Exploring deep learning for microscopy-based helminth egg detection.*
 
