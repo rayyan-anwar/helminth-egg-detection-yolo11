@@ -31,13 +31,15 @@ The objectives are to:
 
 > **Research scope:** This is a preliminary computer-vision experiment, not a clinically validated diagnostic system.
 
-## Research Team
+## Research Team and Responsibilities
 
-**Rayyan Anwar** and **Miss Riza Tasleem** provided equal support to this project.
+### Rayyan Anwar — AI, Machine Learning, and Coding
+Responsible for the computational and technical work, including AI/ML methodology, coding, YOLO11n implementation, model training, validation and testing, technical experiments, performance evaluation, and reproducibility documentation.
 
-The project was supported collaboratively. This README does not assign a separate or unequal division of responsibilities between the two team members.
+### Miss Riza Tasleem — Zoology and Biological Analysis
+Responsible for the Zoology component of the project, including biological examination and analysis of helminth eggs, their identification, and interpretation of relevant morphological and zoological characteristics.
 
-For the project contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
+The responsibilities above describe the domain-specific work carried out by each team member. For the concise contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## 02 · Animated Research Workflow
 
@@ -454,8 +456,8 @@ Consult the original publication and dataset record for the complete author list
 
 ### PROJECT TEAM
 
-**Project Lead:** Rayyan Anwar  
-**Zoology Subject-Matter Input:** Miss Riza Tasleem
+**AI/ML and Coding:** Rayyan Anwar  
+**Zoology and Biological Egg Analysis:** Miss Riza Tasleem
 
 *Computer Vision · Microscopy · Reproducible Research*
 
