@@ -37,9 +37,8 @@ The objectives are to:
 
 **Research Collaborators:**
 - **Miss Riza Tasleem** — M.Sc. Zoology, Semester 2
-- **Miss Sidra Naaz** — M.Sc. Zoology, Semester 2
 
-The collaborators contributed to the biological review of helminth morphology and species identification, microscopy-image and annotation review, and biological interpretation of model outputs. These project contributions are distinct from the original dataset authorship.
+Miss Riza Tasleem is listed by name only. No project contribution role is assigned to her in this README.
 
 For the project-level contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
@@ -456,7 +455,7 @@ Consult the original publication and dataset record for the complete author list
 ### BUILT WITH SCIENTIFIC RIGOR 
 **Project Lead: Rayyan Anwar**
 
-**Research Collaborators: · Miss Riza Tasleem · Miss Sidra Naaz** 
+**Name listed: Miss Riza Tasleem** 
 
 *Computer Vision · Microscopy · Reproducible Research* 
 
