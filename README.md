@@ -38,7 +38,7 @@ The objectives are to:
 **Research Collaborators:**
 - **Miss Riza Tasleem** — M.Sc. Zoology, Semester 2
 
-Miss Riza Tasleem is listed by name only. No project contribution role is assigned to her in this README.
+Miss Riza Tasleem is responsible for the Zoology-related subject-matter input. Rayyan Anwar is responsible for all other project work, including AI/ML methodology, implementation, model training and evaluation, analysis, reproducibility, and writing.
 
 For the project-level contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
