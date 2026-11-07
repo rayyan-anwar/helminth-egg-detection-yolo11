@@ -31,16 +31,25 @@ The objectives are to:
 
 > **Research scope:** This is a preliminary computer-vision experiment, not a clinically validated diagnostic system.
 
-## Research Team
+## Research Team and Project Responsibilities
 
-**Project Lead:** Rayyan Anwar
+### Project Lead
+**Rayyan Anwar**
 
-**Research Collaborators:**
-- **Miss Riza Tasleem** — M.Sc. Zoology, Semester 2
+Responsible for the overall project and all non-Zoology work, including:
+- Research planning and AI/ML methodology.
+- Dataset preparation workflow and YOLO11n implementation.
+- Model training, validation, and held-out test evaluation.
+- Coding, experiments, and technical troubleshooting.
+- Statistical and error analysis, metric verification, and reproducibility records.
+- Project documentation and manuscript preparation.
 
-Miss Riza Tasleem is responsible for the Zoology-related subject-matter input. Rayyan Anwar is responsible for all other project work, including AI/ML methodology, implementation, model training and evaluation, analysis, reproducibility, and writing.
+### Zoology Subject-Matter Input
+**Miss Riza Tasleem**
 
-For the project-level contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
+Responsible for the Zoology-related subject-matter input to the project.
+
+These role descriptions distinguish the Zoology input from the computational and research workflow. They do not imply that the listed individuals performed tasks outside the responsibilities stated above. For the concise project contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## 02 · Animated Research Workflow
 
@@ -451,13 +460,16 @@ Oyibo et al. (2025), *Scientific Reports*.
 
 Consult the original publication and dataset record for the complete author list, publication details, and citation requirements.
 
---- <div align="center"> 
-### BUILT WITH SCIENTIFIC RIGOR 
-**Project Lead: Rayyan Anwar**
+--- 
 
-**Name listed: Miss Riza Tasleem** 
+<div align="center">
 
-*Computer Vision · Microscopy · Reproducible Research* 
+### PROJECT TEAM
+
+**Project Lead:** Rayyan Anwar  
+**Zoology Subject-Matter Input:** Miss Riza Tasleem
+
+*Computer Vision · Microscopy · Reproducible Research*
 
 [GitHub Repository](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11) · 
 [Dataset DOI](https://doi.org/10.5281/zenodo.13843815)
