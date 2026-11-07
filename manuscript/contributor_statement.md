@@ -2,9 +2,11 @@
 
 ## Research team
 
-- **Miss Riza Tasleem** — Zoology-related subject-matter input.
-- **Rayyan Anwar** — Project lead; all remaining work, including AI/ML methodology, implementation, model training and evaluation, experiments, analysis, reproducibility, and writing.
+- **Rayyan Anwar**
+- **Miss Riza Tasleem**
+
+Both team members provided equal support to this project. This statement records the team's description of their project support and does not assign a separate or unequal division of tasks.
 
 ## Before manuscript submission
 
-Confirm approval of the final manuscript and willingness to be listed before submission. This statement records the described project roles; final manuscript authorship and author order should be confirmed against documented contributions and applicable authorship criteria.
+Before submission, confirm that both individuals have reviewed and approved the final manuscript and that the final author list, author order, and contribution statement accurately reflect their documented contributions and applicable authorship criteria.
