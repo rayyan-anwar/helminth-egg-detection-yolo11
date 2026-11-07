@@ -6,12 +6,14 @@
 
 Project direction, AI/ML workflow, YOLO11n implementation, model training and evaluation, reproducibility records, and project documentation.
 
-## Name listed
+## Research input
 
-**Miss Riza Tasleem**
+**Miss Riza Tasleem** — Zoology-related subject-matter input.
 
-No project contribution role is assigned to this individual in this file.
+## Project lead and remaining work
+
+**Rayyan Anwar** — All remaining project work, including AI/ML methodology, implementation, model training and evaluation, experiments, analysis, reproducibility, and writing.
 
 ## Attribution note
 
-The project research, experiments, analysis, and writing were performed by Rayyan Anwar. The name above is listed without assigning a project contribution role. This does not alter authorship or attribution of the source dataset or its original publication.
+These role descriptions apply to this project only. They do not alter authorship or attribution of the source dataset or its original publication.
