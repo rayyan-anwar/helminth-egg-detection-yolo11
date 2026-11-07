@@ -1,12 +1,13 @@
 # Project Contributors
 
-## Project Team
+## Rayyan Anwar — AI, Machine Learning, and Coding
 
-- **Rayyan Anwar**
-- **Miss Riza Tasleem**
+Responsible for the computational and technical work, including AI/ML methodology, coding, YOLO11n implementation, model training, validation and testing, technical experiments, performance evaluation, and reproducibility documentation.
 
-Both team members provided equal support to this project. The project is described as a collaborative effort, without assigning a separate or unequal division of responsibilities in this contributor record.
+## Miss Riza Tasleem — Zoology and Biological Analysis
+
+Responsible for the Zoology component of the project, including biological examination and analysis of helminth eggs, their identification, and interpretation of relevant morphological and zoological characteristics.
 
 ## Attribution note
 
-This project contributor record does not alter authorship or attribution of the source dataset or its original publication.
+These descriptions record the domain-specific responsibilities for this project. They do not alter authorship or attribution of the source dataset or its original publication.
