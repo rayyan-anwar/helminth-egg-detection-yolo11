@@ -6,18 +6,12 @@
 
 Project direction, AI/ML workflow, YOLO11n implementation, model training and evaluation, reproducibility records, and project documentation.
 
-## Research Collaborators
+## Name listed
 
-### Miss Riza Tasleem
-M.Sc. Zoology, Semester 2.
+**Miss Riza Tasleem**
 
-Contribution: biological review of helminth morphology and species identification; microscopy-image and annotation review; biological interpretation of model outputs.
-
-### Miss Sidra Naaz
-M.Sc. Zoology, Semester 2.
-
-Contribution: biological review of helminth morphology and species identification; microscopy-image and annotation review; biological interpretation of model outputs.
+No project contribution role is assigned to this individual in this file.
 
 ## Attribution note
 
-These contributor details describe contributions to this project. They do not alter authorship or attribution of the source dataset or its original publication. Final manuscript authorship and author order should be agreed by the research team based on documented contributions and applicable authorship criteria.
+The project research, experiments, analysis, and writing were performed by Rayyan Anwar. The name above is listed without assigning a project contribution role. This does not alter authorship or attribution of the source dataset or its original publication.
