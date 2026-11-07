@@ -31,25 +31,13 @@ The objectives are to:
 
 > **Research scope:** This is a preliminary computer-vision experiment, not a clinically validated diagnostic system.
 
-## Research Team and Project Responsibilities
+## Research Team
 
-### Project Lead
-**Rayyan Anwar**
+**Rayyan Anwar** and **Miss Riza Tasleem** provided equal support to this project.
 
-Responsible for the overall project and all non-Zoology work, including:
-- Research planning and AI/ML methodology.
-- Dataset preparation workflow and YOLO11n implementation.
-- Model training, validation, and held-out test evaluation.
-- Coding, experiments, and technical troubleshooting.
-- Statistical and error analysis, metric verification, and reproducibility records.
-- Project documentation and manuscript preparation.
+The project was supported collaboratively. This README does not assign a separate or unequal division of responsibilities between the two team members.
 
-### Zoology Subject-Matter Input
-**Miss Riza Tasleem**
-
-Responsible for the Zoology-related subject-matter input to the project.
-
-These role descriptions distinguish the Zoology input from the computational and research workflow. They do not imply that the listed individuals performed tasks outside the responsibilities stated above. For the concise project contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
+For the project contributor record, see [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## 02 · Animated Research Workflow
 
