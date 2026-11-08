@@ -1,0 +1,43 @@
+{
+  "audit_type": "original_training_provenance",
+  "run_directory": "/content/drive/MyDrive/Helminth_Project_Backup/helminth_recovered_v2",
+  "source_files": {
+    "args": "/content/drive/MyDrive/Helminth_Project_Backup/helminth_recovered_v2/args.yaml",
+    "results_csv": "/content/drive/MyDrive/Helminth_Project_Backup/helminth_recovered_v2/results.csv",
+    "checkpoint": "/content/drive/MyDrive/Helminth_Project_Backup/helminth_recovered_v2/weights/best.pt"
+  },
+  "training_configuration": {
+    "model": "yolo11n.pt",
+    "epochs_configured": 15,
+    "epochs_logged": 15,
+    "imgsz": 320,
+    "batch": 4,
+    "device": "cpu",
+    "seed": 42,
+    "deterministic": true,
+    "pretrained": true,
+    "optimizer_setting": "auto",
+    "lr0_setting": 0.01,
+    "lrf_setting": 0.01,
+    "data_path_recorded": "/content/helminth_4class_recovered/dataset.yaml"
+  },
+  "best_logged_epoch_by_map50": {
+    "epoch": 13.0,
+    "metrics/precision(B)": 0.8737,
+    "metrics/recall(B)": 0.7774,
+    "metrics/mAP50(B)": 0.87501,
+    "metrics/mAP50-95(B)": 0.68419
+  },
+  "final_logged_epoch": {
+    "epoch": 15.0,
+    "metrics/precision(B)": 0.87988,
+    "metrics/recall(B)": 0.76827,
+    "metrics/mAP50(B)": 0.87072,
+    "metrics/mAP50-95(B)": 0.68843
+  },
+  "checkpoint_sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+  "baseline_sha256": "a35c2bdf2cca16f7c6f1c2b685920237f6b11e07ac75be8f6da468cec74529df",
+  "checkpoint_hash_matches_baseline": true,
+  "optimizer_resolution_independently_verified": false,
+  "test_set_used_for_training_selection": false
+}
