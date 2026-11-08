@@ -13,7 +13,16 @@
     {"class_id":"2","class_name":"SCH.","AP50":"0.6267599640210948","AP50_percent":"62.68","AP50_95":"0.4001615557720174","AP50_95_percent":"40.02"},
     {"class_id":"3","class_name":"TRI.","AP50":"0.8078160752269449","AP50_percent":"80.78","AP50_95":"0.6021000194094459","AP50_95_percent":"60.21"}
   ],
-  "error_analysis": {"confidence":0.25,"NMS_IoU":0.7,"matching_IoU":0.5,"TP":107,"FP":37,"FN":40,"precision":0.7431,"recall":0.7279},
+  "error_analysis": {
+    "confidence": 0.25,
+    "NMS_IoU": 0.7,
+    "matching_IoU": 0.5,
+    "TP": 107,
+    "FP": 37,
+    "FN": 40,
+    "precision": 0.7431,
+    "recall": 0.7279
+  },
   "test_set_used_for_tuning": false,
   "optimizer_lr_independently_verified": false,
   "checkpoint_modified_during_audit": false,
