@@ -51,6 +51,8 @@ The responsibilities above describe the domain-specific work carried out by each
 
 </div>
 
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
+
 ## 03 · Microscopy-Inspired Visualization
 
 <div align="center">
@@ -60,6 +62,7 @@ The responsibilities above describe the domain-specific work carried out by each
 *This synthetic animation is inspired by microscopy imagery. It is not actual experimental microscopy footage.*
 
 </div>
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 
 ## 04 · Illustrative Prediction Demo
 
@@ -72,6 +75,7 @@ The responsibilities above describe the domain-specific work carried out by each
 </div>
 
 ---
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 
 ## 05 · Dataset
 
@@ -96,6 +100,7 @@ The responsibilities above describe the domain-specific work carried out by each
 | 3 | TRI. | *Trichuris trichiura* |
 
 ---
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 
 ## 06 · Model Architecture and Training
 
@@ -115,6 +120,8 @@ The experiment uses YOLO11n, a lightweight YOLO11 object-detection model initial
 | Deterministic mode | Enabled in recorded configuration |
 
 These are the recorded training configuration values. The original training runtime details are not fully reconciled with the saved training configuration, so the Python/PyTorch/GPU details from the later 5 November evaluation must not be presented as the training environment. The effective optimizer and learning-rate settings should be confirmed against the original training logs before claiming exact training reproducibility.
+
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 
 ## 07 · Mathematical Foundations
 
@@ -195,6 +202,7 @@ $$
 The exact evaluation settings must be held consistent when comparing results.
 
 ---
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 
 ## 08 · Held-Out Test Results
 
@@ -240,6 +248,8 @@ The two records differ. The NMS IoU settings are not the same, so the values sho
 These results describe object detection on the selected test split. They do not establish clinical diagnostic performance or generalization to independent laboratories, slides, specimens, or populations. Biological specimen/slide independence across splits has not been established.
 
 ---
+
+![Loading Animation](https://waveify.onrender.com/api/loader?type=spinner&color=%23007CF0&size=40&speed=1&width=100&height=100)
 ## 09 · Python Inference Example
 
 The following example illustrates how to load the trained checkpoint and run object detection on a microscopy image.
