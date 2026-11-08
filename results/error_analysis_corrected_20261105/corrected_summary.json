@@ -5,10 +5,30 @@
   "matching_IoU": 0.5,
   "coordinate_system": "pixel_xyxy_for_ground_truth_and_predictions",
   "class_stats": {
-    "0": {"GT": 66,"TP": 61,"FP": 19,"FN": 5},
-    "1": {"GT": 30,"TP": 16,"FP": 8,"FN": 14},
-    "2": {"GT": 22,"TP": 11,"FP": 4,"FN": 11},
-    "3": {"GT": 29,"TP": 19,"FP": 6,"FN": 10}
+    "0": {
+      "GT": 66,
+      "TP": 61,
+      "FP": 19,
+      "FN": 5
+    },
+    "1": {
+      "GT": 30,
+      "TP": 16,
+      "FP": 8,
+      "FN": 14
+    },
+    "2": {
+      "GT": 22,
+      "TP": 11,
+      "FP": 4,
+      "FN": 11
+    },
+    "3": {
+      "GT": 29,
+      "TP": 19,
+      "FP": 6,
+      "FN": 10
+    }
   },
   "TP": 107,
   "FP": 37,
