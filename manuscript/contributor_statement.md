@@ -1,10 +1,6 @@
-# Manuscript Contributor Statement
+# Manuscript Project-Team Listing
 
-## Research team and contributions
+- Rayyan Anwar
+- Miss Riza Tasleem (M.Sc. Zoology, Semester 2)
 
-- **Rayyan Anwar — AI, Machine Learning, and Coding:** Responsible for the computational and technical work, including AI/ML methodology, coding, YOLO11n implementation, model training, validation and testing, technical experiments, performance evaluation, and reproducibility documentation.
-- **Miss Riza Tasleem — Zoology and Biological Analysis:** Responsible for the Zoology component, including biological examination and analysis of helminth eggs, their identification, and interpretation of relevant morphological and zoological characteristics.
-
-## Before manuscript submission
-
-Before submission, confirm that both individuals have reviewed and approved the final manuscript and that the final author list, author order, and contribution statement accurately reflect their documented contributions and applicable authorship criteria.
+This file records names only and does not assign contribution roles or determine manuscript authorship. The final author list and any formal authorship/contribution declarations must be confirmed against the work actually performed, each person's approval of the final manuscript, and the target journal's criteria.
