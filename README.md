@@ -389,18 +389,32 @@ helminth-egg-detection-yolo11/
 ├── models/
 │   └── best.pt
 ├── notebooks/
-│   └── New Project.ipynb
+│   ├── New Project.ipynb
+│   └── originals/
+├── research_figures/
+│   ├── 01_baseline_validation_performance.png
+│   ├── 02_baseline_loss_curves.png
+│   ├── 03_baseline_learning_rate.png
+│   ├── 04_sch_validation_precision_recall.png
+│   ├── 05_corrected_classwise_error_analysis.png
+│   ├── 06_publication_classwise_error_analysis.png
+│   └── 07_validation_missed_detection_confidence_comparison.png
 ├── results/
+│   ├── final_documented_test_metrics.json
 │   ├── classwise_test_results_20261105.csv
 │   ├── classwise_test_results_20261105.json
-│   ├── classwise_test_metrics_note_20261105.md
-│   ├── final_documented_test_metrics.json
+│   ├── error_analysis_corrected_20261105/
 │   ├── reproducibility_manifest.json
-│   ├── research_readiness_audit_20261105.md
-│   ├── training_history.csv
-│   └── training_args.yaml
+│   ├── training_provenance_audit.json
+│   ├── learning_rate_provenance_audit.json
+│   ├── final_publication_readiness_audit_20261106.json
+│   └── single_image_inference_diagnostic_20261105.*
+├── .gitignore
 ├── CONTRIBUTORS.md
+├── REPRODUCIBILITY_CHECKLIST.md
 ├── dataset.yaml
+├── dataset.example.yaml
+├── dataset.portable.yaml
 ├── index.html
 ├── predict.py
 ├── requirements.txt
@@ -422,7 +436,7 @@ The checklist distinguishes the documented 5 November evaluation from the origin
 - The recorded training configuration specifies random seed 42 and deterministic mode.
 - Exact reproduction may depend on software versions, hardware, dataset files, and library behavior.
 - The original training configuration contains a data path that may differ from the path used in another environment.
-- Update `dataset.yaml` before running prediction or evaluation on a different machine.
+- On another machine, copy `dataset.example.yaml` to `dataset.local.yaml`, set the local dataset root, and pass that local file to prediction/evaluation commands. Preserve the tracked `dataset.yaml` and its recorded SHA-256 hash.
 - Preserve the original checkpoint and its SHA-256 hash when conducting additional experiments.
 - Store evaluation parameters and output metrics with each run.
 - Keep validation-based model selection separate from held-out test evaluation.
