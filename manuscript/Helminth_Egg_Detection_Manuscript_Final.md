@@ -1,6 +1,6 @@
 **YOLO11n-Based Detection of Four Helminth Egg Categories in Faecal-Smear Microscopy Images**
 
-**Rayyan Anwar**
+**Rayyan Anwar, Riza Tasleem**
 
 **Abstract**
 
@@ -238,7 +238,7 @@ Future research should focus on larger and independently collected datasets, spe
 
 **Author Contributions**
 
-Rayyan Anwar conducted the research, experiments, data analysis, interpretation, and manuscript preparation.
+The detailed contribution statement is to be confirmed and approved by both authors before journal submission. No unverified individual contribution roles are assigned in this draft.
 
 **6. References**
 
