@@ -1,6 +1,6 @@
-# Manuscript Project-Team Listing
+# Manuscript Co-Author Listing
 
 - Rayyan Anwar
-- Miss Riza Tasleem (M.Sc. Zoology, Semester 2)
+- Riza Tasleem
 
-This file records names only and does not assign contribution roles or determine manuscript authorship. The final author list and any formal authorship/contribution declarations must be confirmed against the work actually performed, each person's approval of the final manuscript, and the target journal's criteria.
+The manuscript lists both individuals as co-authors. The detailed contribution statement must be confirmed by both authors against the work actually performed, and both authors must review and approve the final manuscript before journal submission. No individual contribution roles are assigned in this file.
