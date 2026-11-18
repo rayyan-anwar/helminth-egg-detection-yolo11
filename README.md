@@ -3,9 +3,9 @@
 ## Project overview
 A preliminary object-detection experiment for four helminth egg classes in microscopy images using YOLO11n.
 
-## Contributors
+## Co-authors
 - Rayyan Anwar
-- Miss Riza Tasleem (M.Sc. Zoology, Semester 2)
+- Riza Tasleem
 
 ## Dataset
 - Name: Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset
@@ -22,9 +22,9 @@ A preliminary object-detection experiment for four helminth egg classes in micro
 - Batch size: 4
 - Device: CPU
 - Optimizer setting in training YAML: automatic selection
-- Training software: Ultralytics 8.4.181
-- Python: 3.13.16
-- PyTorch: 2.11.0+cpu
+- Evaluation software: Ultralytics 8.4.181
+
+The Python and PyTorch versions shown in the final evaluation environment are not asserted here as verified training-environment versions.
 
 **Training provenance caveat:** the saved checkpoint metadata records AdamW and a learning-rate value of 0.00125, whereas the training configuration records automatic optimizer selection and an initial learning-rate value of 0.01. The effective optimizer and learning-rate settings have not been independently verified.
 
