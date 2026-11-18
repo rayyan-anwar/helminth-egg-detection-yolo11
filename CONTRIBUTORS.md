@@ -1,4 +1,4 @@
-# Project Contributors
+# Manuscript Co-Authors
 
 - Rayyan Anwar
-- Miss Riza Tasleem (M.Sc. Zoology, Semester 2)
+- Riza Tasleem
