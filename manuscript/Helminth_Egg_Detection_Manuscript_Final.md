@@ -7,9 +7,10 @@
 - **Rayyan Anwar:** B.Tech in Computer Science and M.Tech in Artificial Intelligence and Machine Learning, Mahatma Gandhi University, Kerala, India; MBA in Management, European University, Germany.
 - **Riza Tasleem:** M.Sc. Zoology candidate (final year).
 
-*Current institutional/departmental affiliations and Riza Tasleem’s university should be added by the authors if required by the target journal.*
+**Author affiliations**
 
-*[Author affiliations to be confirmed and inserted]*
+- **Rayyan Anwar:** Current institutional affiliation to be supplied before journal submission. Educational qualifications are listed above and should not be treated as institutional affiliation.
+- **Riza Tasleem:** Department of Zoology, Haldaur Degree College, Haldaur, Uttar Pradesh, India (affiliated with Guru Jambheshwar University, Hisar, Haryana, India).
 
 **Abstract**
 
@@ -253,12 +254,12 @@ Riza Tasleem contributed the zoological and parasitological domain work, includi
 
 **Declarations**
 
-- **Ethics approval and consent to participate:** This study involved secondary analysis of publicly available microscopy images and associated annotations from the Zenodo Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset (DOI: 10.5281/zenodo.13843815). The authors did not recruit human participants, collect new specimens, or access identifiable personal information. The ethics approval and consent arrangements applicable to the original dataset are those described in its source publication and dataset documentation; the authors have not independently verified the original approval documentation. No new ethics approval or participant consent was obtained for this secondary analysis.
+- **Ethics approval and consent to participate:** The present study is a secondary analysis of publicly available, de-identified microscopy images and associated annotations from the Zenodo Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset (DOI: 10.5281/zenodo.13843815). The Zenodo record reports that the original Schistoscope data collection received approval from the Federal Capital Territory (FCT) Health Research Ethics Committee, Nigeria (approval number FHREC/2022/01/102/05-07-22), that all procedures followed relevant guidelines and regulations, and that informed consent was obtained from the parents or guardians of participating school-age children. The dataset record also states that no personally identifiable information is included. The present authors did not recruit participants, collect new specimens, or access identifiable personal information; no new ethics approval or participant consent was obtained for this secondary analysis.
 - **Consent for publication:** Not applicable; the present study does not report identifiable individual-level information.
 - **Funding:** This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors. The work was conducted without external financial support.
 - **Competing interests:** The authors declare that they have no competing financial or non-financial interests that could have influenced the work reported in this manuscript.
 - **Data availability:** The source image dataset is publicly available through Zenodo (DOI: 10.5281/zenodo.13843815). The availability of the selected image subset, annotations, trained weights, and derived files is subject to the source dataset licence and the contents of the project repository.
-- **Acknowledgements:** The authors acknowledge the researchers who developed and published the Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset and the Zenodo repository for making the dataset accessible for secondary research. The authors’ use of the dataset does not imply endorsement of this study by the original dataset creators.
+- **Acknowledgements:** The authors acknowledge the dataset creators for making the Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset publicly available through Zenodo. The original dataset publication reports support from the NTD Innovation Prize and the NWO-WOTRO Science for Global Development Program (Grant W 07.30318.009); these funds supported the original dataset-generating study and did not fund the present work. Use of the dataset does not imply endorsement of the present study by the original dataset creators.
 
 **6. References**
 
