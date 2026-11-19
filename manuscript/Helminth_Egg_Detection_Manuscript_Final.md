@@ -9,8 +9,8 @@
 
 **Author affiliations**
 
-- **Rayyan Anwar:** Current institutional affiliation to be supplied before journal submission. Educational qualifications are listed above and should not be treated as institutional affiliation.
-- **Riza Tasleem:** M.Sc. Zoology candidate, Haldaur Degree College, Haldaur, Bijnor, Uttar Pradesh, India. The degree-awarding university and the current affiliation applicable to her M.Sc. programme require confirmation from her current enrolment/registration record before journal submission.
+- **Rayyan Anwar:** Independent Researcher, India.
+- **Riza Tasleem:** M.Sc. Zoology candidate, Haldaur Degree College, Haldaur, Bijnor, Uttar Pradesh, India, affiliated with Guru Jambheshwar University, as confirmed by the authors.
 
 **Abstract**
 
