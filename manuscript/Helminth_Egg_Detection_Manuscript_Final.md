@@ -250,7 +250,7 @@ Future research should focus on larger and independently collected datasets, spe
 
 **Author Contributions**
 
-Riza Tasleem contributed the zoological and parasitological domain work, including biological interpretation and review of helminth egg categories and morphology. Rayyan Anwar led the computational work, including the data-extraction and preprocessing workflow, preparation of the object-detection dataset, model implementation, training, evaluation, computational analysis, and preparation of the technical components of the manuscript. Both authors should review and approve the final manuscript before submission.
+Riza Tasleem contributed the zoological and parasitological domain work, including biological interpretation and review of helminth egg categories and morphology. Rayyan Anwar led the computational work, including the data-extraction and preprocessing workflow, preparation of the object-detection dataset, model implementation, training, evaluation, computational analysis, and preparation of the technical components of the manuscript. Both authors must review and approve the final manuscript before journal submission.
 
 **Declarations**
 
@@ -258,7 +258,7 @@ Riza Tasleem contributed the zoological and parasitological domain work, includi
 - **Consent for publication:** Not applicable; the present study does not report identifiable individual-level information.
 - **Funding:** This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors. The work was conducted without external financial support.
 - **Competing interests:** The authors declare that they have no competing financial or non-financial interests that could have influenced the work reported in this manuscript.
-- **Data availability:** The source image dataset is publicly available through Zenodo (DOI: 10.5281/zenodo.13843815). The availability of the selected image subset, annotations, trained weights, and derived files is subject to the source dataset licence and the contents of the project repository.
+- **Data availability:** The source image dataset is publicly available through Zenodo (DOI: 10.5281/zenodo.13843815). The source dataset is distributed under the Creative Commons Attribution 4.0 International (CC BY 4.0) licence, as stated in the Zenodo record. The availability of the selected image subset, annotations, trained weights, and derived files is subject to that licence and the contents of the project repository.
 - **Acknowledgements:** The authors acknowledge the dataset creators for making the Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset publicly available through Zenodo. The original dataset publication reports support from the NTD Innovation Prize and the NWO-WOTRO Science for Global Development Program (Grant W 07.30318.009); these funds supported the original dataset-generating study and did not fund the present work. Use of the dataset does not imply endorsement of the present study by the original dataset creators.
 
 **6. References**
