@@ -2,6 +2,13 @@
 
 **Rayyan Anwar, Riza Tasleem**
 
+**Author educational qualifications**
+
+- **Rayyan Anwar:** B.Tech in Computer Science and M.Tech in Artificial Intelligence and Machine Learning, Mahatma Gandhi University, Kerala, India; MBA in Management, European University, Germany.
+- **Riza Tasleem:** M.Sc. Zoology candidate (final year).
+
+*Current institutional/departmental affiliations and Riza Tasleem’s university should be added by the authors if required by the target journal.*
+
 *[Author affiliations to be confirmed and inserted]*
 
 **Abstract**
@@ -242,17 +249,16 @@ Future research should focus on larger and independently collected datasets, spe
 
 **Author Contributions**
 
-The detailed contribution statement is to be confirmed and approved by both authors before journal submission. No unverified individual contribution roles are assigned in this draft.
+Riza Tasleem contributed the zoological and parasitological domain work, including biological interpretation and review of helminth egg categories and morphology. Rayyan Anwar led the computational work, including the data-extraction and preprocessing workflow, preparation of the object-detection dataset, model implementation, training, evaluation, computational analysis, and preparation of the technical components of the manuscript. Both authors reviewed the manuscript and are responsible for approving its final version.
 
 **Declarations**
 
-- **Ethics approval and consent to participate:** To be confirmed by the authors based on dataset provenance and applicable ethics requirements.
-- **Consent for publication:** Not applicable / to be confirmed by the authors.
-- **Funding:** To be confirmed by the authors.
-- **Competing interests:** To be confirmed by both authors.
-- **Data availability:** The source dataset is publicly available from Zenodo (DOI: 10.5281/zenodo.13843815). Availability of the selected subset, annotations, code, and derived project files should be stated according to repository release and dataset licence.
-- **Author contributions:** To be confirmed and approved by both authors. No individual contribution roles are assigned in this draft.
-- **Acknowledgements:** To be confirmed; add only if applicable.
+- **Ethics approval and consent to participate:** This study involved secondary analysis of publicly available microscopy images and associated annotations from the Zenodo Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset (DOI: 10.5281/zenodo.13843815). The authors did not recruit human participants, collect new specimens, or access identifiable personal information. The ethics approval and consent arrangements applicable to the original dataset are those described in its source publication and dataset documentation; the authors have not independently verified the original approval documentation. No new ethics approval or participant consent was obtained for this secondary analysis.
+- **Consent for publication:** Not applicable; the present study does not report identifiable individual-level information.
+- **Funding:** This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors. The work was conducted without external financial support.
+- **Competing interests:** The authors declare that they have no competing financial or non-financial interests that could have influenced the work reported in this manuscript.
+- **Data availability:** The source image dataset is publicly available through Zenodo (DOI: 10.5281/zenodo.13843815). The availability of the selected image subset, annotations, trained weights, and derived files is subject to the source dataset licence and the contents of the project repository.
+- **Acknowledgements:** The authors acknowledge the researchers who developed and published the Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset and the Zenodo repository for making the dataset accessible for secondary research. The authors’ use of the dataset does not imply endorsement of this study by the original dataset creators.
 
 **6. References**
 
