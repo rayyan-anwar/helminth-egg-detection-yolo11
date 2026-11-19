@@ -249,7 +249,7 @@ Future research should focus on larger and independently collected datasets, spe
 
 **Author Contributions**
 
-Riza Tasleem contributed the zoological and parasitological domain work, including biological interpretation and review of helminth egg categories and morphology. Rayyan Anwar led the computational work, including the data-extraction and preprocessing workflow, preparation of the object-detection dataset, model implementation, training, evaluation, computational analysis, and preparation of the technical components of the manuscript. Both authors reviewed the manuscript and are responsible for approving its final version.
+Riza Tasleem contributed the zoological and parasitological domain work, including biological interpretation and review of helminth egg categories and morphology. Rayyan Anwar led the computational work, including the data-extraction and preprocessing workflow, preparation of the object-detection dataset, model implementation, training, evaluation, computational analysis, and preparation of the technical components of the manuscript. Both authors should review and approve the final manuscript before submission.
 
 **Declarations**
 
