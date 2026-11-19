@@ -2,6 +2,8 @@
 
 **Rayyan Anwar, Riza Tasleem**
 
+*[Author affiliations to be confirmed and inserted]*
+
 **Abstract**
 
 **Background:** Helminth egg identification in faecal microscopy is an important component of parasitological examination. However, manual microscopic screening can be time-consuming and may be affected by observer variability. Deep learning-based object detection offers a potential approach for assisting the identification and localization of helminth eggs in microscopy images.
@@ -13,6 +15,8 @@
 **Results:** On the test subset comprising 60 images and 147 annotated instances, the model achieved a precision of 77.56%, recall of 63.89%, mean average precision at IoU 0.50 (mAP@50) of 73.48%, and mean average precision across IoU thresholds 0.50–0.95 (mAP@50–95) of 55.84%. Class-wise results showed variation in detection performance, with *Ascaris* achieving the highest AP@50 (95.39%), while Hookworm showed comparatively lower performance (55.06%).
 
 **Conclusion:** The findings demonstrate the feasibility of applying a lightweight YOLO11n model to helminth egg detection in the selected microscopy image dataset. However, the limited dataset size, variation in class-wise performance, and absence of independent external validation mean that further evaluation is required before any diagnostic application can be considered.
+
+**Keywords:** helminth eggs; faecal-smear microscopy; YOLO11n; object detection; deep learning; parasitology
 
 **1. Introduction**
 
@@ -239,6 +243,16 @@ Future research should focus on larger and independently collected datasets, spe
 **Author Contributions**
 
 The detailed contribution statement is to be confirmed and approved by both authors before journal submission. No unverified individual contribution roles are assigned in this draft.
+
+**Declarations**
+
+- **Ethics approval and consent to participate:** To be confirmed by the authors based on dataset provenance and applicable ethics requirements.
+- **Consent for publication:** Not applicable / to be confirmed by the authors.
+- **Funding:** To be confirmed by the authors.
+- **Competing interests:** To be confirmed by both authors.
+- **Data availability:** The source dataset is publicly available from Zenodo (DOI: 10.5281/zenodo.13843815). Availability of the selected subset, annotations, code, and derived project files should be stated according to repository release and dataset licence.
+- **Author contributions:** To be confirmed and approved by both authors. No individual contribution roles are assigned in this draft.
+- **Acknowledgements:** To be confirmed; add only if applicable.
 
 **6. References**
 
