@@ -281,24 +281,24 @@ Riza Tasleem contributed the zoological and parasitological domain work, includi
 
 Figure 1. Baseline validation mAP across training epochs. The plot shows mAP@0.50 and mAP@0.50:0.95 over 15 epochs; the dashed vertical line marks the best logged mAP@0.50 at epoch 13.
 
-<img src="media/image1.png" style="width:6.15in;height:3.95357in" />
+<img src="research_figures/01_baseline_validation_performance.png" style="width:6.15in;height:3.95357in" />
 
 Figure 2. Baseline training and validation loss curves. The three panels show box loss, classification loss, and distribution focal loss across the training epochs.
 
-<img src="media/image2.png" style="width:6.15in;height:1.89231in" />
+<img src="research_figures/02_baseline_loss_curves.png" style="width:6.15in;height:1.89231in" />
 
 Figure 3. Logged learning-rate schedule during baseline training. The plot shows the learning-rate trajectory recorded across the 15 training epochs.
 
-<img src="media/image3.png" style="width:6.15in;height:3.95357in" />
+<img src="research_figures/03_baseline_learning_rate.png" style="width:6.15in;height:3.95357in" />
 
 Figure 4. SCH validation precision and recall across confidence thresholds. The plot shows the change in precision and recall for the Schistosoma mansoni (SCH) class as the confidence threshold increases.
 
-<img src="media/image4.png" style="width:6.15in;height:3.80418in" />
+<img src="research_figures/04_sch_validation_precision_recall.png" style="width:6.15in;height:3.80418in" />
 
 Figure 5. Value-labelled class-wise detection error counts. The chart shows true-positive (TP), false-positive (FP), and false-negative (FN) counts for Ascaris (ASC), Hookworm (HKW), Schistosoma mansoni (SCH), and Trichuris (TRI); numerical values are displayed above the bars.
 
-<img src="media/image6.png" style="width:6.15in;height:3.81127in" />
+<img src="research_figures/05_corrected_classwise_error_analysis.png" style="width:6.15in;height:3.81127in" />
 
 Figure 6. Distribution of matched-object prediction confidence in validation images. Boxplots compare prediction-confidence distributions for Hookworm and Schistosoma mansoni detections; this figure is a confidence-distribution analysis, not a confidence-threshold comparison.
 
-<img src="media/image7.png" style="width:6.15in;height:3.84375in" />
+<img src="research_figures/07_validation_missed_detection_confidence_comparison.png" style="width:6.15in;height:3.84375in" />
