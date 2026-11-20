@@ -65,7 +65,7 @@ The Python and PyTorch versions shown in the final evaluation environment are no
 
 ## Test-set evaluation
 
-The final documented evaluation used the project's designated test split of **60 images containing 147 annotated instances**.
+The final documented evaluation used the project's designated test split of **60 images containing 147 annotated instances**. Exploratory evaluations under other settings were also performed on this same test subset during the project; possible test-set reuse is therefore disclosed as a limitation and should be considered when interpreting the reported estimates.
 
 | Evaluation setting | Value |
 |---|---:|
