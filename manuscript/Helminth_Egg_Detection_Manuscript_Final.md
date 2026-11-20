@@ -18,7 +18,7 @@
 
 **Objective:** This study investigated the application of a lightweight YOLO11n object detection model for detecting and classifying four helminth egg categories: *Ascaris lumbricoides*, Hookworm, *Schistosoma mansoni*, and *Trichuris trichiura*.
 
-**Methods:** A subset of 400 image–annotation pairs was selected from the publicly available Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset. The data were divided into training (280 images), validation (60 images), and testing (60 images) subsets using a fixed random seed. A pretrained YOLO11n model was trained for 15 epochs with an image size of 320 × 320 pixels and a batch size of 4. Final evaluation was performed on the held-out test subset using a confidence threshold of 0.001 and an NMS IoU threshold of 0.45.
+**Methods:** A subset of 400 image–annotation pairs was selected from the publicly available Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset. The data were divided into training (280 images), validation (60 images), and testing (60 images) subsets using a fixed random seed. A pretrained YOLO11n model was trained for 15 epochs with an image size of 320 × 320 pixels and a batch size of 4. Final evaluation was performed on the designated test subset using a confidence threshold of 0.001 and an NMS IoU threshold of 0.45.
 
 **Results:** On the test subset comprising 60 images and 147 annotated instances, the model achieved a precision of 77.56%, recall of 63.89%, mean average precision at IoU 0.50 (mAP@50) of 73.48%, and mean average precision across IoU thresholds 0.50–0.95 (mAP@50–95) of 55.84%. Class-wise results showed variation in detection performance, with *Ascaris* achieving the highest AP@50 (95.39%), while Hookworm showed comparatively lower performance (55.06%).
 
@@ -116,7 +116,7 @@ The study does not include independent clinical validation, prospective laborato
 
 **3.1. Overall Model Performance**
 
-The YOLO11n model was evaluated on the held-out test subset consisting of 60 microscopy images and 147 annotated object instances. Under the documented evaluation configuration (image size: 320 × 320 pixels, confidence threshold: 0.001, and NMS IoU threshold: 0.45), the model achieved a precision of 0.7756 and a recall of 0.6389. The overall mAP@0.50 was 0.7348, while mAP@0.50:0.95 was 0.5584.
+The YOLO11n model was evaluated on the designated test subset consisting of 60 microscopy images and 147 annotated object instances. Under the documented evaluation configuration (image size: 320 × 320 pixels, confidence threshold: 0.001, and NMS IoU threshold: 0.45), the model achieved a precision of 0.7756 and a recall of 0.6389. The overall mAP@0.50 was 0.7348, while mAP@0.50:0.95 was 0.5584.
 
 These results indicate that the model detected a proportion of the annotated helminth egg instances, although its recall and stricter-IoU average precision indicate that missed detections and localisation errors remained. The difference between mAP@0.50 and mAP@0.50:0.95 also suggests that detection performance was less consistent under more stringent localisation criteria.
 
@@ -275,7 +275,7 @@ Riza Tasleem contributed the zoological and parasitological domain work, includi
 
 6.  Adamu A, Belachew E, Calpotura K, et al. Automated detection of soil transmitted helminthes and schistosomiasis using yolo based deep learning models. Parasitol Res. 2026. doi:10.1007/s00436-026-08790-3.
 
-7.  Jocher G, Qiu J. Ultralytics YOLO11 \[software\]. Version 11.0.0. 2024. Available from: https://github.com/ultralytics/ultralytics.
+7.  Ultralytics. Ultralytics [software]. Version 8.4.181. 2026. Available from: https://github.com/ultralytics/ultralytics.
 
 **Figure Legends**
 
