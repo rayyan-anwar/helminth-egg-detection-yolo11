@@ -273,9 +273,9 @@ Riza Tasleem contributed the zoological and parasitological domain work, includi
 
 5.  Oyibo P, Meulah B, Agbana T, van Lieshout L, Oyibo W, Vdovin G, et al. Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset \[Data set\]. Zenodo. 2025. doi:10.5281/zenodo.13843815.
 
-6.  Adamu A, Belachew E, Calpotura K, et al. Automated detection of soil transmitted helminthes and schistosomiasis using yolo based deep learning models. Parasitol Res. 2026. doi:10.1007/s00436-026-08790-3.
+6.  Adamu A, Belachew E, Calpotura K, et al. Automated detection of soil transmitted helminthes and schistosomiasis using yolo based deep learning models. Parasitol Res. Published online October 24, 2026. doi:10.1007/s00436-026-08790-3.
 
-7.  Ultralytics. Ultralytics [software]. Version 8.4.181. 2026. Available from: https://github.com/ultralytics/ultralytics.
+7.  Ultralytics. Ultralytics [software]. Version 8.4.181. Released October 17, 2026. Available from: https://pypi.org/project/ultralytics/8.4.181/.
 
 **Figure Legends**
 
