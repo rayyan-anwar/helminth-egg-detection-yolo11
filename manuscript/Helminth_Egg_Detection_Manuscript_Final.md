@@ -61,7 +61,7 @@ The 400 selected image–annotation pairs were divided into three subsets: 280 i
 
 The dataset was partitioned using a fixed random seed of 42.
 
-The training subset was used to optimise model parameters, while the validation subset was used to monitor model performance during training. The test subset was reserved for the final documented evaluation. However, because exploratory test evaluations were also performed under different settings during the project, the possibility of test-set reuse influencing experimental decisions is acknowledged as a limitation.
+The training subset was used to optimise model parameters, while the validation subset was used to monitor model performance during training. The designated test subset was used for the documented evaluation. However, exploratory evaluations were also performed on this subset under different settings during the project; therefore, possible test-set reuse and its influence on experimental decisions are acknowledged as limitations.
 
 **2.3. Object-Detection Model**
 
