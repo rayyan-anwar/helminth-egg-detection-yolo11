@@ -120,7 +120,21 @@ The repository includes the following key project files and records:
 | `results/classwise_test_results_20261105.csv` | Class-wise AP results |
 | `results/training_history.csv` | Recorded training history |
 | `results/training_args.yaml` | Recorded training configuration |
-| `figures/` | Evaluation plots |
+| `figures/` | Standard Ultralytics evaluation plots |
+| `research_figures/` | Publication figures used by the manuscript (Figures 1–6) and one additional unreferenced plot |
+
+## Manuscript figure assets
+
+The six figure legends in the manuscript link to image files in `research_figures/`. The referenced paths currently exist in the repository:
+
+1. `research_figures/01_baseline_validation_performance.png`
+2. `research_figures/02_baseline_loss_curves.png`
+3. `research_figures/03_baseline_learning_rate.png`
+4. `research_figures/04_sch_validation_precision_recall.png`
+5. `research_figures/05_corrected_classwise_error_analysis.png`
+6. `research_figures/07_validation_missed_detection_confidence_comparison.png`
+
+The repository also contains `research_figures/06_publication_classwise_error_analysis.png`, which is not currently called by a manuscript figure legend. It has been retained rather than deleted; decide whether to archive it as supplementary material or remove it during final file curation. The separate `figures/` directory contains standard model-evaluation plots and is not the same as the six manuscript figure assets.
 
 ## Reproducibility
 
