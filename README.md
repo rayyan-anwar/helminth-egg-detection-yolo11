@@ -1,80 +1,156 @@
-# YOLO11n-Based Detection of Four Helminth Egg Categories in Faecal-Smear Microscopy Images
+<div align="center">
 
-[![Research project](https://img.shields.io/badge/Research-computational%20microscopy-blue)](https://github.com/rayyan-anwar/helminth-egg-detection-yolo11)
+# HELMINTH EGG DETECTION
+### YOLO11n · Computer Vision · Microscopy · Scientific Research
 
-A research project exploring deep-learning-based object detection of four helminth egg categories in faecal-smear microscopy images using **YOLO11n**.
+**A preliminary four-class object-detection study in faecal-smear microscopy**
 
-> **Research status:** Preliminary computational study. The reported results should not be interpreted as evidence of clinical diagnostic performance or readiness for routine laboratory use.
+[![Model](https://img.shields.io/badge/Model-YOLO11n-blue)](https://docs.ultralytics.com/)
+[![Dataset](https://img.shields.io/badge/Dataset-Zenodo-orange)](https://doi.org/10.5281/zenodo.13843815)
+[![Status](https://img.shields.io/badge/Status-Preliminary%20Research-informational)](#limitations-and-responsible-use)
+[![Framework](https://img.shields.io/badge/Ultralytics-8.4.181-green)](https://github.com/ultralytics/ultralytics)
 
-## Authors
+*An experimental study of automated localization and classification of helminth egg categories in microscopy images.*
+
+</div>
+
+---
+
+## Animated project overview
+
+<div align="center">
+
+### Research workflow
+![Animated workflow](assets/workflow.gif)
+
+### Microscopy-inspired animation
+![Microscopy-inspired animation](assets/microscopic_motion.gif)
+
+### Illustrative detection-style animation
+![Illustrative prediction animation](assets/prediction_demo.gif)
+
+</div>
+
+> **Visual disclaimer:** The microscopy-inspired animation is synthetic/illustrative. The detection-style animation is not presented as verified output from the trained checkpoint. These assets are for visual communication only.
+
+## 1. Research overview
+
+This repository documents a preliminary object-detection experiment using **YOLO11n** to identify four helminth egg categories in faecal-smear microscopy images. The study uses a selected subset of a publicly available annotated dataset and preserves training, validation, and test partitions.
+
+Research objectives:
+
+- Establish a lightweight object-detection baseline.
+- Evaluate localization and category-level detection on a retained test split.
+- Document mathematical concepts behind bounding-box detection and evaluation.
+- Preserve configuration, metrics, model artefacts, figures, and analysis records.
+- Communicate limitations and reproducibility concerns transparently.
+
+## 2. Authors
 
 - **Rayyan Anwar** — Independent Researcher, India
-- **Riza Tasleem** — M.Sc. Zoology student, Haldaur Degree College, Haldaur, affiliated with Guru Jambheshwar University, India
+- **Riza Tasleem** — M.Sc. Zoology, Semester 2; Haldaur Degree College, affiliated with Guru Jambeshwar University, India
 
-## Project at a glance
+## 3. Dataset and classes
 
-| Item | Description |
+**Source dataset:** Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset.
+
+- Zenodo record: [13843815](https://zenodo.org/records/13843815)
+- DOI: [10.5281/zenodo.13843815](https://doi.org/10.5281/zenodo.13843815)
+- Selected image–annotation pairs: **400**
+- Split: **280 training / 60 validation / 60 test**
+- Recorded split seed: **42**
+
+| Class ID | Label | Organism |
+|---:|---|---|
+| 0 | ASC. | *Ascaris lumbricoides* |
+| 1 | HKW. | Hookworm |
+| 2 | SCH. | *Schistosoma mansoni* |
+| 3 | TRI. | *Trichuris trichiura* |
+
+The project uses the dataset's existing labels. Annotation validity and specimen/slide-level independence have not been independently established in this project.
+
+## 4. Model and training configuration
+
+| Parameter | Recorded setting |
 |---|---|
-| Task | Object detection in microscopy images |
-| Model | YOLO11n (pretrained) |
-| Target categories | Four helminth egg categories |
-| Dataset sample | 400 image–annotation pairs |
-| Data split | 280 train / 60 validation / 60 test |
-| Input resolution | 320 × 320 pixels |
-| Training duration | 15 configured epochs |
-| Training hardware | CPU |
-| Evaluation framework | Ultralytics 8.4.181 |
-
-## Dataset
-
-This project uses a selected subset of the **Soil-transmitted Helminths and *Schistosoma mansoni* Eggs Image Dataset**.
-
-- **Dataset record:** [Zenodo record 13843815](https://zenodo.org/records/13843815)
-- **Dataset DOI:** [10.5281/zenodo.13843815](https://doi.org/10.5281/zenodo.13843815)
-- **Selected sample:** 400 image–annotation pairs
-- **Split:** 280 training, 60 validation and 60 test images
-- **Split seed:** 42
-
-The project uses the dataset's existing annotations. The biological correctness of those annotations has not been independently established in this project.
-
-### Detection categories
-
-| Code | Category |
-|---|---|
-| ASC | *Ascaris lumbricoides* |
-| HKW | Hookworm |
-| SCH | *Schistosoma mansoni* |
-| TRI | *Trichuris trichiura* |
-
-## Model training
-
-The detector was trained using pretrained YOLO11n weights with the following recorded configuration:
-
-- Image size: 320 × 320
-- Configured epochs: 15
-- Batch size: 4
-- Device: CPU
-- Random seed: 42
-- Deterministic mode: enabled
-- Optimizer setting in training YAML: automatic selection
-- Evaluation software: Ultralytics 8.4.181
-
-**Training-provenance note:** The saved checkpoint metadata records AdamW and a learning-rate value of 0.00125, while the training configuration records automatic optimizer selection and an initial learning-rate value of 0.01. The effective optimizer and learning-rate settings have not been independently verified. This discrepancy is retained transparently rather than resolved by assumption.
-
-The Python and PyTorch versions shown in the final evaluation environment are not presented as verified versions of the original training environment.
-
-## Test-set evaluation
-
-The final documented evaluation used the project's designated test split of **60 images containing 147 annotated instances**. Exploratory evaluations under other settings were also performed on this same test subset during the project; possible test-set reuse is therefore disclosed as a limitation and should be considered when interpreting the reported estimates.
-
-| Evaluation setting | Value |
-|---|---:|
+| Model | YOLO11n |
+| Initialization | Pretrained weights |
 | Image size | 320 × 320 |
-| Confidence threshold | 0.001 |
-| NMS IoU threshold | 0.45 |
-| Evaluation framework | Ultralytics 8.4.181 |
+| Configured epochs | 15 |
+| Batch size | 4 |
+| Training device | CPU |
+| Seed | 42 |
+| Deterministic mode | Enabled in recorded configuration |
+| Optimizer setting in YAML | Automatic |
+| Framework | Ultralytics 8.4.181 |
 
-### Aggregate performance
+**Training provenance caveat:** Saved checkpoint metadata records AdamW and learning rate 0.00125, while the training configuration records optimizer selection as automatic and initial learning rate 0.01. Effective optimizer and learning-rate settings have not been independently reconciled. The exact original training runtime is not fully verified.
+
+## 5. Mathematical foundations
+
+These equations describe common object-detection concepts and evaluation metrics; they are explanatory and do not imply a custom implementation of these calculations.
+
+### 5.1 Bounding-box parameterization
+
+A box may be represented by its center, width, and height:
+
+\[
+B=(x_c,y_c,w,h)
+\]
+
+Alternatively, corner coordinates can be written as \((x_1,y_1,x_2,y_2)\). Coordinate normalization and conventions depend on the annotation/model format.
+
+### 5.2 Intersection over Union (IoU)
+
+IoU measures the overlap between a predicted bounding box and a reference annotation:
+
+\[
+\operatorname{IoU}(B_p,B_{gt})=
+\frac{|B_p\cap B_{gt}|}{|B_p\cup B_{gt}|}
+\]
+
+An IoU of 1 indicates identical boxes. Detection evaluation uses an IoU threshold as part of the match criterion.
+
+### 5.3 Precision and recall
+
+\[
+\operatorname{Precision}=\frac{TP}{TP+FP}
+\qquad
+\operatorname{Recall}=\frac{TP}{TP+FN}
+\]
+
+where TP denotes true-positive detections, FP false positives, and FN false negatives under the evaluation matching protocol.
+
+### 5.4 Average Precision (AP)
+
+Average Precision summarizes a class-specific precision–recall curve:
+
+\[
+AP=\int_0^1 P(R)\,dR
+\]
+
+In practice, AP is numerically estimated from the precision–recall curve.
+
+### 5.5 Mean Average Precision (mAP)
+
+For \(C\) classes:
+
+\[
+mAP=\frac{1}{C}\sum_{c=1}^{C} AP_c
+\]
+
+- **mAP@0.50:** AP at IoU threshold 0.50.
+- **mAP@0.50–0.95:** AP averaged over IoU thresholds 0.50 to 0.95 in increments of 0.05.
+
+Detection metrics are not equivalent to patient-level sensitivity, specificity, or clinical diagnostic accuracy.
+
+## 6. Held-out test evaluation
+
+The retained documented evaluation used **60 test images and 147 annotated instances**.
+
+**Evaluation settings:** image size 320; confidence threshold 0.001; NMS IoU threshold 0.45; Ultralytics 8.4.181. The test subset was also used in exploratory evaluations under other settings during development; possible test-set reuse is disclosed as a limitation.
+
+### Aggregate results — documented 5 November 2026 evaluation
 
 | Metric | Result |
 |---|---:|
@@ -83,100 +159,134 @@ The final documented evaluation used the project's designated test split of **60
 | mAP@0.50 | 73.48% |
 | mAP@0.50–0.95 | 55.84% |
 
-### Class-wise average precision
+### Class-wise AP
 
 | Category | AP@0.50 | AP@0.50–0.95 |
 |---|---:|---:|
-| *Ascaris* (ASC) | 95.39% | 76.73% |
-| Hookworm (HKW) | 55.06% | 46.38% |
-| *Schistosoma mansoni* (SCH) | 62.68% | 40.02% |
-| *Trichuris* (TRI) | 80.78% | 60.21% |
+| *Ascaris* (ASC.) | 95.39% | 76.73% |
+| Hookworm (HKW.) | 55.06% | 46.38% |
+| *S. mansoni* (SCH.) | 62.68% | 40.02% |
+| *Trichuris* (TRI.) | 80.78% | 60.21% |
 
-The class-wise values are taken from the retained 5 November 2026 class-wise results record and the publication-readiness audit.
+Class-wise performance is not uniform; Hookworm and *S. mansoni* show lower AP in this retained evaluation. The results are estimates on a small selected sample, not clinical validation.
 
-**Interpretation:** Performance varies across categories. In particular, the lower AP values for Hookworm and *S. mansoni* indicate that detection performance is not uniform across the four classes. These results should be interpreted in the context of the small selected dataset and the evaluation protocol.
+### Separate error-analysis record
 
-### Separate error analysis
+A separate analysis (confidence 0.25, NMS IoU 0.70, ground-truth matching IoU 0.50) reported:
 
-A separate error-analysis run reported:
+| Count | Value |
+|---|---:|
+| TP | 107 |
+| FP | 37 |
+| FN | 40 |
+| Images | 60 |
 
-- True positives (TP): 107
-- False positives (FP): 37
-- False negatives (FN): 40
-- Images analysed: 60
+These counts use a different protocol and must not be combined directly with the aggregate evaluation above.
 
-This analysis used confidence threshold 0.25, NMS IoU threshold 0.70 and ground-truth matching IoU threshold 0.50. Because these settings differ from the principal evaluation settings, these counts are reported separately and must not be combined with the aggregate test metrics above.
+### Other retained evaluation
 
-## Repository contents
+An earlier standardized evaluation dated 23 October 2026 used NMS IoU 0.70 and recorded P 74.77%, R 64.40%, mAP@0.50 72.50%, and mAP@0.50–0.95 55.26%. Because the evaluation settings differ, the two records are not a controlled like-for-like comparison.
 
-The repository includes the following key project files and records:
+## 7. Inference example
 
-| Path | Description |
+```python
+from ultralytics import YOLO
+
+model = YOLO("models/best.pt")
+
+results = model.predict(
+    source="sample_microscopy.jpg",
+    imgsz=320,
+    conf=0.25,
+    save=True
+)
+
+for result in results:
+    for box in result.boxes:
+        class_id = int(box.cls.item())
+        confidence = float(box.conf.item())
+        xyxy = box.xyxy[0].tolist()
+        print(class_id, confidence, xyxy)
+```
+
+The confidence threshold in this example is illustrative; it is not the threshold used for the documented aggregate test metrics.
+
+## 8. Dataset configuration template
+
+```yaml
+path: /path/to/dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: ASC.
+  1: HKW.
+  2: SCH.
+  3: TRI.
+```
+
+Set the dataset root to your local environment. Keep class IDs consistent with the annotations. The tracked project configuration and provenance records should not be overwritten casually.
+
+## 9. Repository map
+
+| Path | Purpose |
 |---|---|
-| `models/best.pt` | Trained model checkpoint |
-| `predict.py` | Prediction script |
+| `models/best.pt` | Trained checkpoint |
+| `predict.py` | Inference script |
 | `dataset.yaml` | Dataset configuration |
-| `results/final_documented_test_metrics.json` | Documented aggregate test metrics |
-| `results/classwise_test_results_20261105.csv` | Class-wise AP results |
-| `results/training_history.csv` | Recorded training history |
-| `results/training_args.yaml` | Recorded training configuration |
-| `figures/` | Standard Ultralytics evaluation plots |
-| `research_figures/` | Publication figures used by the manuscript (Figures 1–6) and one additional unreferenced plot |
+| `results/` | Metrics, training records, audits, diagnostics |
+| `figures/` | Evaluation plots |
+| `research_figures/` | Manuscript figure assets |
+| `assets/` | README animation and illustrative visual assets |
+| `manuscript/` | Manuscript/contributor documentation |
+| `notebooks/` | Research notebook(s) |
 
-## Manuscript figure assets
+See the repository files for the detailed audit trail and additional outputs.
 
-The six figure legends in the manuscript link to image files in `research_figures/`. The referenced paths currently exist in the repository:
+## 10. Reproducibility
 
-1. `research_figures/01_baseline_validation_performance.png`
-2. `research_figures/02_baseline_loss_curves.png`
-3. `research_figures/03_baseline_learning_rate.png`
-4. `research_figures/04_sch_validation_precision_recall.png`
-5. `research_figures/05_corrected_classwise_error_analysis.png`
-6. `research_figures/07_validation_missed_detection_confidence_comparison.png`
+- Recorded training configuration: seed 42 and deterministic mode.
+- Preserve the original checkpoint and its SHA-256 record.
+- Record software versions, data paths, evaluation settings, and output artifacts for new runs.
+- Do not overwrite earlier evaluation records when results change; retain and explain protocol differences.
+- The original data path is environment-specific; configure it for the local machine.
+- A fixed seed does not guarantee identical results across different software and hardware.
 
-The repository also contains `research_figures/06_publication_classwise_error_analysis.png`, which is not currently called by a manuscript figure legend. It has been retained rather than deleted; decide whether to archive it as supplementary material or remove it during final file curation. The separate `figures/` directory contains standard model-evaluation plots and is not the same as the six manuscript figure assets.
+## 11. Limitations and responsible use
 
-## Reproducibility
+1. The study uses a selected sample of 400 image–annotation pairs.
+2. Patient-, specimen-, and slide-level independence across splits is not established.
+3. Dataset annotations have not been independently verified in this project.
+4. Exploratory test-set reuse occurred; possible test-set reuse may affect interpretation.
+5. External validation and additional baseline comparisons are not available in the current study.
+6. The metrics do not establish clinical diagnostic accuracy or clinical utility.
+7. The model is **not validated for routine laboratory or clinical deployment**.
 
-The recorded configuration specifies random seed 42 and deterministic mode enabled. Exact reproduction may still depend on software versions, hardware, data files, and library behaviour.
+Further work should include expert annotation review, data-source and specimen-level leakage checks, repeated runs, stronger baseline comparisons, and independent external validation.
 
-The original training data path is environment-specific. Before running the project in another environment, configure the dataset path for that environment. Preserve the archived configuration and provenance records; do not silently overwrite the original settings.
+## 12. Ethics, funding, and competing interests
 
-The reported checkpoint and metric files should be interpreted alongside the training-provenance note above. The effective optimizer and learning-rate settings have not been independently verified.
+This work is a secondary computational analysis of an existing public dataset. No new participants were recruited and no new specimens were collected for this project. The original dataset documentation reports ethics approval and informed consent for the underlying study; these records were not independently audited for this secondary analysis.
 
-## Limitations and responsible interpretation
+The current project received no specific funding. Funding attributed to the source dataset-generating study is not claimed as funding for this project. No specific financial or non-financial competing interests are declared.
 
-This work is a preliminary experiment based on a selected sample of 400 image–annotation pairs. Important limitations include:
+## 13. Data availability and citations
 
-1. **Sample size and representativeness:** The selected dataset subset is relatively small and may not represent the full range of microscopy conditions encountered in practice.
-2. **Patient- or slide-level independence:** Exact duplicate checks found no cross-split duplicates, but patient-level or slide-level independence has not been established.
-3. **Annotation verification:** The original biological annotations have not been independently verified in this project.
-4. **Test-set reuse:** Exploratory evaluations using different settings were performed during the project. Possible test-set reuse should therefore be considered when interpreting the final estimates.
-5. **External validation:** Independent validation on additional datasets and microscopy settings has not been performed.
-6. **Clinical applicability:** The reported metrics do not establish clinical diagnostic accuracy, clinical utility, or readiness for routine laboratory deployment.
+The source dataset is available through [Zenodo record 13843815](https://doi.org/10.5281/zenodo.13843815), subject to the dataset licence and terms.
 
-Further work should include stronger baseline comparisons, repeated experiments, source-level data-leakage assessment, expert review of annotations, and independent external validation.
+**Related publication:** Oyibo et al. (2025), *Scientific Reports*.  
+[https://doi.org/10.1038/s41598-025-02755-9](https://doi.org/10.1038/s41598-025-02755-9)
 
-## Ethics and data use
+## 14. Project disclaimer
 
-This project is a secondary computational analysis of an existing publicly available dataset. No new human participants were recruited and no new biological specimens were collected for this project. The original dataset documentation reports ethics approval and informed consent for the underlying study. No new ethics approval was obtained for this secondary analysis. The project relies on the original dataset documentation and does not claim to have independently audited the original ethics records.
-
-## Funding and competing interests
-
-The current project received no specific funding. Any funding acknowledged by the original dataset-generating study relates to that underlying study and should not be interpreted as funding for the present project.
-
-The authors declare no specific financial or non-financial competing interests.
-
-## Data availability
-
-The source dataset is available through [Zenodo record 13843815](https://doi.org/10.5281/zenodo.13843815), subject to its stated licence and terms. Project-specific code, configuration files, model checkpoint and retained evaluation outputs are provided in this repository, subject to applicable third-party dataset and software terms.
-
-## How to cite the source dataset
-
-Oyibo et al. (2025). *Scientific Reports*. [https://doi.org/10.1038/s41598-025-02755-9](https://doi.org/10.1038/s41598-025-02755-9)
-
-**Dataset:** [Soil-transmitted Helminths and Schistosoma mansoni Eggs Image Dataset](https://doi.org/10.5281/zenodo.13843815).
+This repository is a research record for a preliminary computer-vision experiment. It is **not a medical device** and must not be used as a substitute for expert microscopy, laboratory procedures, or clinical diagnosis.
 
 ---
 
-*This repository documents a research experiment and its computational artefacts. It is not a medical device and must not be used as a substitute for expert microscopy or clinical diagnosis.*
+<div align="center">
+
+**COMPUTER VISION · MICROSCOPY · REPRODUCIBLE RESEARCH**
+
+*Transparent reporting · Scientific caution · Computational experimentation*
+
+</div>
