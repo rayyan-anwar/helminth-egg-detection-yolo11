@@ -88,61 +88,86 @@ The project uses the dataset's existing labels. Annotation validity and specimen
 
 ## 5. Mathematical foundations
 
-These equations describe common object-detection concepts and evaluation metrics; they are explanatory and do not imply a custom implementation of these calculations.
+The equations below define standard object-detection concepts used to interpret the reported metrics. They are explanatory definitions; they do not imply that the project implements a separate evaluation algorithm.
 
-### 5.1 Bounding-box parameterization
+### 5.1 Bounding-box representation
 
-A box may be represented by its center, width, and height:
+A bounding box in center-width-height form is represented as
 
-\[
-B=(x_c,y_c,w,h)
-\]
+$$
+B=(x_c,y_c,w,h),
+$$
 
-Alternatively, corner coordinates can be written as \((x_1,y_1,x_2,y_2)\). Coordinate normalization and conventions depend on the annotation/model format.
+where $(x_c,y_c)$ is the box centre, $w$ is its width, and $h$ is its height. In corner form, the same box is represented by
+
+$$
+B=(x_{min},y_{min},x_{max},y_{max}).
+$$
+
+For valid boxes, $x_{max}>x_{min}$ and $y_{max}>y_{min}$. Coordinate normalization, image dimensions, and box conventions must follow the dataset and model format.
 
 ### 5.2 Intersection over Union (IoU)
 
-IoU measures the overlap between a predicted bounding box and a reference annotation:
+For a predicted box $B_p$ and a ground-truth box $B_{gt}$, intersection over union is
 
-\[
+$$
 \operatorname{IoU}(B_p,B_{gt})=
-\frac{|B_p\cap B_{gt}|}{|B_p\cup B_{gt}|}
-\]
+\frac{\operatorname{Area}(B_p\cap B_{gt})}
+{\operatorname{Area}(B_p\cup B_{gt})}.
+$$
 
-An IoU of 1 indicates identical boxes. Detection evaluation uses an IoU threshold as part of the match criterion.
+IoU ranges from 0 (no overlap) to 1 (identical regions). During detection evaluation, a predicted box can qualify as a localization match only when it satisfies the specified IoU criterion and the evaluator's class and matching rules.
 
-### 5.3 Precision and recall
+### 5.3 Precision, recall, and F1-score
 
-\[
-\operatorname{Precision}=\frac{TP}{TP+FP}
+Under a defined confidence threshold, IoU threshold, class matching rule, and one-to-one detection matching protocol:
+
+$$
+\operatorname{Precision}=\frac{TP}{TP+FP},
 \qquad
-\operatorname{Recall}=\frac{TP}{TP+FN}
-\]
+\operatorname{Recall}=\frac{TP}{TP+FN}.
+$$
 
-where TP denotes true-positive detections, FP false positives, and FN false negatives under the evaluation matching protocol.
+The F1-score is the harmonic mean of precision and recall:
+
+$$
+F_1=2\,\frac{\operatorname{Precision}\times\operatorname{Recall}}
+{\operatorname{Precision}+\operatorname{Recall}}.
+$$
+
+Here, $TP$ is the number of matched detections, $FP$ is the number of unmatched predicted detections, and $FN$ is the number of unmatched ground-truth objects. These are object-level detection quantities, not patient-level diagnostic outcomes.
 
 ### 5.4 Average Precision (AP)
 
-Average Precision summarizes a class-specific precision–recall curve:
+For one class, the precision–recall curve describes precision $P$ as recall $R$ varies. In its continuous definition, average precision is the area under the precision–recall curve:
 
-\[
-AP=\int_0^1 P(R)\,dR
-\]
+$$
+AP=\int_{0}^{1} P_{interp}(R)\,dR,
+$$
 
-In practice, AP is numerically estimated from the precision–recall curve.
+where $P_{interp}(R)$ denotes interpolated precision at recall $R$. Detection libraries estimate this area numerically using their specified precision–recall interpolation and sampling procedure. Therefore, the exact AP value depends on the evaluator implementation and settings.
 
 ### 5.5 Mean Average Precision (mAP)
 
-For \(C\) classes:
+For $C$ evaluated classes, mean average precision at a fixed IoU threshold $\tau$ is
 
-\[
-mAP=\frac{1}{C}\sum_{c=1}^{C} AP_c
-\]
+$$
+mAP_{\tau}=\frac{1}{C}\sum_{c=1}^{C} AP_c(\tau),
+$$
 
-- **mAP@0.50:** AP at IoU threshold 0.50.
-- **mAP@0.50–0.95:** AP averaged over IoU thresholds 0.50 to 0.95 in increments of 0.05.
+where $AP_c(\tau)$ is the AP for class $c$ at IoU threshold $\tau$.
 
-Detection metrics are not equivalent to patient-level sensitivity, specificity, or clinical diagnostic accuracy.
+- **mAP@0.50** is the mean of class-wise AP values at IoU threshold $0.50$.
+- **mAP@0.50:0.95** is the mean AP across the ten IoU thresholds $0.50,0.55,\ldots,0.95$, and across the $C$ classes:
+
+$$
+mAP_{0.50:0.95}=
+\frac{1}{10C}
+\sum_{k=0}^{9}\sum_{c=1}^{C}
+AP_c(0.50+0.05k).
+$$
+
+These metrics summarize object detection performance on the evaluated image set. They are not equivalent to clinical sensitivity, specificity, patient-level accuracy, or evidence of clinical readiness.
 
 ## 6. Held-out test evaluation
 
