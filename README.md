@@ -315,3 +315,7 @@ This repository is a research record for a preliminary computer-vision experimen
 *Transparent reporting · Scientific caution · Computational experimentation*
 
 </div>
+
+## Website source
+
+The newer Floot-based research showcase source is archived in [website-source/](website-source/README.md). The repository-root [index.html](index.html) remains the existing standalone static website.
